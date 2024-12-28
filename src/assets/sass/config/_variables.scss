@@ -1,0 +1,106 @@
+/* $colors: (
+	"primary":#343434,
+	"corporate":#00a9cf,
+	"error":#ea2002,
+	"ok":#398f14,
+	"black":#000000,
+	"white":#ffffff,
+); */
+/* //PX a em. Para Breakpoints
+$browser-context: 16;
+@function em($pixels, $context: $browser-context) {
+  @return calc($pixels / $context) * 1em;
+} */
+
+
+:root{
+	// - Colors - //
+	/* --colors-primary: var(--colors-black); */
+	--colors-primary: var(--colors-blue);
+	--colors-corporate: var(--colors-blue);
+	--colors-error: #ea2002;
+	--colors-ok: #398f14;
+	--colors-black: #000000;
+	--colors-white: #ffffff;
+	--colors-blue: #253746;
+	/* --colors-orange: #E36A2D;
+	--colors-yellow: #E5F244; */
+	--colors-grey: #E5E7E9;
+	--colors-image-filter-bg: #4c718f;
+	--colors-newsletter-input: #757575;
+	--colors-corporate-rgb: 37, 55, 70;		// #253746 en RGB
+	--colors-white-rgb: 255, 255, 255;		// #ffffff en RGB
+	--colors-modal-bg: var(--colors-corporate-rgb);		// #253746 en RGB
+
+	// - Font sizes - //
+	--general-font-size: 1rem;			// 16px
+	--general-line-height: 1em;			// 1 * 16px = 16px
+	--general-line-height-number: 1; 		// 1 * 16px = 16px
+
+	//- General - //
+	/* --inner-side-padding: 3.90625%;
+	--inner-side-padding--narrow: 9.6875%;
+	--inner-max-width: 80rem;		// 1280px */
+	/* --content-side-padding: 7.7%; */
+	--content-side-padding: 7.7vw;
+	--content-max-width: 120rem;		// 1920px
+	--content-narrow-width: 66.625rem;		// 1066px
+	
+	
+	// - Header - //
+	/* --site-header-padding: .75rem;			// top and bottom
+	//--site-header-height: 3.8125rem;
+	--site-header-height: 3.6875rem; */
+	/* --site-header-block: clamp(.9375rem,1.875vw,2.25rem);			// top and bottom */
+	--site-header-block: .9375rem;			// top and bottom
+	--site-header-block-modal: 3.375rem;			// top and bottom
+	/* --site-header-height: 3.6875rem; */
+	--mobile-menu-block-modal: 8.375rem; 			// top and bottom
+	--desktop-submenu-block: 3.125rem; 			// top and bottom
+	--desktop-submenu-inline: .875rem; 			// left and right
+	
+	//- Button - //
+	/* --button-padding: 0 1.25em;
+	--button-font-size: clamp(.875rem, 1.25vw, 1rem);
+	--button-line-height: 2.3125em;
+	--button-border-width: .0625rem;
+	--button-border-radius: 6.25rem;
+	--button-color: currentColor;
+	--button-bg-color: transparent;
+	--button-hover-color: var(--colors-primary);
+	--button-hover-bg-color: var(--colors-white);
+	--button-filled-color: var(--colors-white);
+	--button-filled-bg-color: var(--colors-corporate);
+	--button-large-min-width: 11.625em; */
+
+	//- Grid -//
+	--grid-gap: clamp(1rem,2.083vw,2.5rem);
+	--grid-gap-news: clamp(2.1875rem,2.083vw,2.5rem);
+	--grid-gap-footer: 4.6875rem;
+
+	//- Margins -//
+	--basic-block-start: clamp(2.8125rem, 3.125vw, 3.75rem);
+
+
+
+	//- Swiper Slider - //
+	--swiper-navigation-size: clamp(1rem,4.17vw,2rem);
+	/* --swiper-navigation-sides-offset: calc(var(--content-side-padding) * -1); */
+	/* --swiper-navigation-sides-offset: -12px; */
+	/* --swiper-navigation-sides-offset: -21px; */
+	--swiper-navigation-sides-offset: calc(((var(--swiper-navigation-size)*2/3) * -1) - .75rem);
+	/* --swiper-navigation-sides-offset: 0; */
+	--swiper-navigation-color: var(--colors-corporate);
+}
+
+@include xlarge{
+	:root{
+		--site-header-block: 2.25rem;			// top and bottom
+	}
+}
+
+@include xxlarge{
+	:root{
+		--content-side-padding: 9.375rem;
+	}
+}

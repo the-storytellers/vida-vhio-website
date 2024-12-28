@@ -1,0 +1,67 @@
+// 100 - Thin
+// 200 - Extra Light (Ultra Light)
+// 300 - Light
+// 400 - Normal
+// 500 - Medium
+// 600 - Semi Bold (Demi Bold)
+// 700 - Bold
+// 800 - Extra Bold (Ultra Bold)
+// 900 - Black (Heavy)
+@charset "UTF-8";
+
+// @license
+// MyFonts Webfont Build ID 3134640, 2015-12-02T03:32:01-0500
+//
+// The fonts listed in this notice are subject to the End User License
+// Agreement(s) entered into by the website owner. All other parties are
+// explicitly restricted from using the Licensed Webfonts(s).
+//
+// You may obtain a valid license at the URLs below.
+
+// Webfont: Camber by Emtype Foundry
+// URL: http://www.myfonts.com/fonts/emtype/camber
+//
+//
+// License: http://www.myfonts.com/viewlicense?type=web&buildid=3134640
+// Licensed pageviews: 140,000
+// Webfonts copyright: Copyright (c) 2015 by Eduardo Manso. All rights reserved.
+//
+// © 2015 MyFonts Inc
+//@import url('//hello.myfonts.net/count/2fd4b0');
+//@import url('//fonts.googleapis.com/css?family=Prompt:300,400,500');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:wght@100..900&display=swap');
+
+//Fonts
+$fonts: (
+  "mo":"'Montserrat', sans-serif",
+  "lo":"'Lora', serif"
+);
+
+//Mixins de Google Fonts basadas en array $fonts. Ex: @include font('os','bold');
+@mixin font($fontkey, $type:"regular"){
+
+   @if map-has-key($fonts, $fontkey) {
+
+      $font: map-get($fonts, $fontkey);
+
+      font-family: #{$font};
+
+      @if $type == heavy {
+          font-weight:900;
+      } @else if $type == bold {
+          font-weight:700;
+      } @else if $type == sbold {
+          font-weight:600;
+      } @else if $type == medium {
+          font-weight:500;
+      } @else if $type == light {
+          font-weight:300;
+      } @else {
+        font-weight:400;
+      }
+  } @else{
+    @warn "Unknown `#{$fontkey}` in $fonts.";
+  }
+}

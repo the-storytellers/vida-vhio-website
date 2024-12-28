@@ -1,0 +1,268 @@
+//Genera un sticky footer basado en http://ryanfait.com/sticky-footer/
+@mixin stickyFooter($wrapper,$footer,$height) {
+	html, body {
+		height: 100%;
+	}
+	#{$wrapper} {
+		min-height: 100%;
+		margin:0 auto (- $height);
+		&:after{
+			content:" ";
+			display: block;
+		}
+	}
+	#{$footer}, #{$wrapper}:after {
+		height: $height;
+	}
+}
+
+//Columnas equidistantes: []---[]---[]---[]
+@mixin equalWidthColumns($width, $margin) {
+
+	$last: $width + "n";
+	$itemWidth: (100  - ($margin * ($width - 1))) / $width;
+
+	&:nth-of-type(n) {
+		margin-right: $margin;
+		width: $itemWidth;
+	}
+	&:nth-of-type(#{$last}) {
+		margin-right: 0%;
+	}
+}
+//Generador de triangulos
+@mixin triangle($top, $right, $bottom, $left, $color, $direction) {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: $top $right $bottom $left;
+	-moz-transform: scale(.9999);
+
+	@if $direction == up {
+		border-color: transparent transparent $color transparent;
+		} @else if $direction == right {
+			border-color: transparent transparent transparent $color;
+			} @else if $direction == bottom {
+				border-color: $color transparent transparent transparent;
+				} @else {
+					border-color: transparent $color transparent transparent;
+				}
+			}
+
+//Centrado vertical: solo cuando el elemento tiene un height definido
+@mixin verticalCenter {
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+//Centrado horizontal: solo cuando el elemento tiene un width definido
+@mixin horizontalCenter {
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+//Centrado total
+@mixin fullCenter {
+	@include verticalCenter;
+	@include horizontalCenter;
+}
+
+//Generador de circulos
+@mixin circle($size) {
+	border-radius: 50%;
+	height: $size;
+	width: $size;
+	line-height: $size;
+}
+
+@mixin transition ($s:'0.2s'){
+	transition: #{$s} ease all;
+}
+
+@mixin gradient($fromColor, $toColor) {
+	background-color: $toColor;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(to bottom, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(to bottom, $fromColor, $toColor); /* FF3.6 */
+	background-image:     -ms-linear-gradient(to bottom, $fromColor, $toColor); /* IE10 */
+	background-image:      -o-linear-gradient(to bottom, $fromColor, $toColor); /* Opera 11.10+ */
+	background-image:         linear-gradient(to bottom, $fromColor, $toColor);
+	filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}')";
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}')";
+}
+
+@mixin animation($animation, $iteration, $origin) {
+	animation: $animation;
+	animation-iteration-count: $iteration;
+	transform-origin: $origin;
+
+	-webkit-animation: $animation;
+	-webkit-animation-iteration-count: $iteration;
+	-webkit-transform-origin: $origin;
+
+	-moz-animation: $animation;
+	-moz-animation-iteration-count: $iteration;
+	-moz-transform-origin: $origin;
+
+	-o-animation: $animation;
+	-o-animation-iteration-count: $iteration;
+	-o-transform-origin: $origin;
+
+	-ms-animation: $animation;
+	-ms-animation-iteration-count: $iteration;
+	-ms-transform-origin: $origin;
+
+}
+@mixin blur($px: 0) {
+	-webkit-filter: blur(#{$px}px) !important;
+	-ms-filter: blur(#{$px}px) !important;
+	-moz-filter: blur(#{$px}px) !important;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'blur\'><feGaussianBlur stdDeviation=\'#{$px}\' /></filter></svg>#blur");
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$px}');
+}
+@mixin bounce($distance){
+	@-moz-keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {
+		  -moz-transform: translateY(0);
+		  transform: translateY(0);
+		}
+		40% {
+		  -moz-transform: translateY($distance * 2);
+		  transform: translateY($distance * 2);
+		}
+		60% {
+		  -moz-transform: translateY($distance);
+		  transform: translateY($distance);
+		}
+	}
+
+	@-webkit-keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {
+		  -webkit-transform: translateY(0);
+		  transform: translateY(0);
+		}
+		40% {
+		  -webkit-transform: translateY($distance * 2);
+		  transform: translateY($distance * 2);
+		}
+		60% {
+		  -webkit-transform: translateY($distance);
+		  transform: translateY($distance);
+		}
+	}
+
+	@keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {
+		  -moz-transform: translateY(0);
+		  -ms-transform: translateY(0);
+		  -webkit-transform: translateY(0);
+		  transform: translateY(0);
+		}
+		40% {
+		  -moz-transform: translateY($distance * 2);
+		  -ms-transform: translateY($distance * 2);
+		  -webkit-transform: translateY($distance * 2);
+		  transform: translateY($distance * 2);
+		}
+		60% {
+		  -moz-transform: translateY($distance);
+		  -ms-transform: translateY($distance);
+		  -webkit-transform: translateY($distance);
+		  transform: translateY($distance);
+		}
+	  }
+}
+
+//Wrappers
+@mixin trans {
+	@include transition;
+}
+
+@mixin xCenter {
+	@include horizontalCenter;
+}
+
+@mixin yCenter {
+	@include verticalCenter;
+}
+
+@mixin cols($a,$b) {
+	@include equalWidthColumns($a,$b);
+}
+
+
+//Aspect-ratio
+@mixin aspect-ratio($a,$b) {
+	$c: ($b/($a/100))*1%;
+	&:after {
+		padding-top: $c;
+		display: block;
+		content: '';
+		position: static;
+	}
+}
+@mixin zoomImage {
+	background-position: center;
+	background-size: auto 120%;
+	background-repeat:no-repeat;
+	@include transition;
+	&:hover {
+		background-size: auto 140%;
+		@include transition;
+	}
+}
+
+//Mixins MediaQueries: Necesita tenier foundation instalado
+
+@mixin small {
+	@media #{$small-up} {
+		@content;
+	}
+}
+@mixin medium {
+	@media #{$medium-up} {
+		@content;
+	}
+}
+@mixin large {
+	@media #{$large-up} {
+		@content;
+	}
+}
+@mixin xlarge {
+	@media #{$xlarge-up} {
+		@content;
+	}
+}
+@mixin xxlarge {
+	@media #{$xxlarge-up} {
+		@content;
+	}
+}
+@mixin xxxlarge {
+	@media #{$xxxlarge-up} {
+		@content;
+	}
+}
+//Flex
+@mixin yCenterFlex {
+    //Aplicar en padre
+    display: flex;
+    align-items: center;
+}
+
+@mixin xCenterFlex {
+    //Aplicar en padre
+    display: flex;
+    justify-content: center;
+}
+
+@mixin fullCenterFlex {
+    //Aplicar en padre
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

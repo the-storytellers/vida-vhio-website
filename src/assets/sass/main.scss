@@ -1,0 +1,70 @@
+//PX a em. Para Breakpoints
+$browser-context: 16;
+@function em($pixels, $context: $browser-context) {
+  @return calc($pixels / $context) * 1em;
+}
+
+//Breakpoints
+$small: em(551);
+$medium: em(768);
+$large: em(1024);
+$xlarge: em(1280);
+$xxlarge: em(1920);
+$small-up: "only screen and (min-width:#{$small})";
+$medium-up: "only screen and (min-width:#{$medium})";
+$large-up: "only screen and (min-width:#{$large})";
+$xlarge-up: "only screen and (min-width:#{$xlarge})";
+$xxlarge-up: "only screen and (min-width:#{$xxlarge})";
+
+//Config local
+@import "config/mixins";        // Mixins. Funciones auxiliares: centrado vertical, columnas equidistantes, etc.
+@import "config/fonts"; //Configuración de las tipografias
+@import "config/variables"; //Configuración: array de colores, mixins de fuentes, etc.
+@import "config/base";
+
+//Components
+@import "components/header/xsmall";
+@import "components/modal/xsmall";
+@import "components/hero/xsmall";
+@import "components/section/xsmall";
+@import "components/slider/xsmall";
+@import "components/grid/xsmall";
+@import "components/cols/xsmall";
+@import "components/practice-area/xsmall";
+@import "components/news/xsmall";
+@import "components/logos/xsmall";
+@import "components/featured-profile/xsmall";
+@import "components/list/xsmall";
+@import "components/card/xsmall";
+@import "components/data/xsmall";
+@import "components/contact/xsmall";
+@import "components/form/xsmall";
+@import "components/footer/xsmall";
+@import "components/member/xsmall";
+@import "components/single/xsmall";
+@import "components/newsletter/xsmall";
+@import "components/page/xsmall";
+/* @import "components/header/xsmall";
+@import "components/modal/xsmall";
+@import "components/page-header/xsmall";
+@import "components/slider/xsmall";
+@import "components/slide/xsmall";
+@import "components/info/xsmall";
+@import "components/preview/xsmall";
+@import "components/grid/xsmall";
+@import "components/card/xsmall";
+@import "components/footer/xsmall";
+@import "components/page-content/xsmall";
+@import "components/columns/xsmall";
+@import "components/data/xsmall";
+@import "components/form/xsmall";
+@import "components/single/xsmall";
+@import "components/banner/xsmall";
+@import "components/author/xsmall";
+@import "components/categories/xsmall";
+@import "components/page-intro/xsmall";
+@import "components/page-default/xsmall";
+@import "components/pagination/xsmall";
+@import "components/filter/xsmall";
+@import "components/map/xsmall";
+@import "components/open-map/xsmall"; */
