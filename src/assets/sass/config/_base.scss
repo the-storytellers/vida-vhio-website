@@ -11,10 +11,10 @@ html{
 }
 body {
 	padding-bottom: 0;
-    @include font('mo');
+    @include font('ra');
     font-size: var(--general-font-size);
     line-height: var(--general-line-height);
-	/* font-weight: 400; */
+	font-weight: 400;
     background-color: var(--colors-white);
     color: var(--colors-primary);
 	
@@ -125,27 +125,28 @@ strong{
 	clear: both;
 } */
 
-.bg-grey{
+/* .bg-grey{
 	background-color: var(--colors-grey);
 }
 .bg-blue{
 	background-color: var(--colors-blue);
-}
+} */
 
 
-.button{
+/* .button{
 	display: inline-block;
-	/* max-width: 28.125rem; */
-	max-width: 14.4375rem;
-	/* padding: var(--button-padding);
-	font-size: var(--button-font-size);
-	line-height: var(--button-line-height);
-	color: var(--button-color);
-	background-color: var(--button-bg-color);
-	border: var(--button-border-width) solid currentColor;
-	border-radius: var(--button-border-radius);
-	text-align: center;
-	transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in; */
+	//max-width: 28.125rem;
+	//max-width: 14.4375rem;
+	//padding: var(--button-padding);
+	//font-size: var(--button-font-size);
+	//line-height: var(--button-line-height);
+	//color: var(--button-color);
+	//background-color: var(--button-bg-color);
+	//border: var(--button-border-width) solid currentColor;
+	//border-radius: var(--button-border-radius);
+	//text-align: center;
+	//transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in;
+
 	padding: .75em 1.25em;
 	font-size: clamp(.75rem,1.04vw,1.25rem);
 	line-height: 1.5em;
@@ -159,25 +160,25 @@ strong{
 		margin-inline-start: .6em;
 		width: .8em;
 		height: .8em;
-		/* aspect-ratio: 1; */
+		//aspect-ratio: 1;
 		mask: url("../images/icon-arrow.svg") no-repeat 50% 50%;
 		mask-size: cover;
 		background-color: currentColor;
-		/* vertical-align: middle; */
+		//vertical-align: middle;
 	}
 	
 	&:hover{
 		color: var(--colors-white);
 		text-decoration: none;
 	}
-}
+} */
 
-.link{
+/* .link{
 	display: inline-block;
 	font-size: clamp(1rem,1.04vw,1.25rem);
 	line-height: 1.5em;
 	font-weight: 600;
-	/* text-wrap: nowrap; */
+	//text-wrap: nowrap;
 	white-space: nowrap;
 	color: rgba(var(--colors-corporate-rgb), .5);
 	transition: color .3s ease-in;
@@ -186,18 +187,18 @@ strong{
 		display: inline-block;
 		content: "";
 		margin-inline-start: .5em;
-		/* width: .8em;
-		height: .8em; */
+		//width: .8em;
+		//height: .8em;
 		width: .625em;
 		height: .625em;
-		/* background-image: url("../images/icon-arrow.svg");
-		background-size: cover; */
-		/* background-color: inherit(--link-color); */
-		/* aspect-ratio: 1; */
+		//background-image: url("../images/icon-arrow.svg");
+		//background-size: cover;
+		//background-color: inherit(--link-color);
+		//aspect-ratio: 1;
 		mask: url("../images/icon-arrow.svg") no-repeat 50% 50%;
 		mask-size: cover;
 		background-color: var(--colors-corporate);
-		/* vertical-align: middle; */
+		//vertical-align: middle;
 	}
 	
 	&:hover{
@@ -221,8 +222,8 @@ strong{
 			margin-inline-end: .5em;
 			width: .625em;
 			height: .625em;
-			/* background-image: url("../images/icon-arrow.svg");
-			background-size: cover; */
+			//background-image: url("../images/icon-arrow.svg");
+			//background-size: cover;
 			mask: url("../images/icon-arrow.svg") no-repeat 50% 50%;
 			mask-size: cover;
 			background-color: var(--colors-corporate);
@@ -252,9 +253,9 @@ strong{
 			color: var(--colors-white);
 		}
 	}
-}
+} */
 
-.text{
+/* .text{
 	@include font('mo');
 	font-size: clamp(.8125rem,1.04vw,1.25rem);
 	line-height: 1.5;
@@ -272,9 +273,9 @@ strong{
 
 .semibold{
 	font-weight: 600;
-}
+} */
 
-.title{
+/* .title{
 	@include font('lo',medium);
 	font-size: clamp(2.1875rem,3.125vw,3.75rem);
 	line-height: 1.25;
@@ -301,7 +302,7 @@ strong{
 	&--small{
 		font-size: clamp(.8125rem,.9375vw,1.125rem);
 	}
-}
+} */
 
 /* span.featured-text{
 	font-size: clamp(1.25rem, 2.1875vw, 1.75rem);
@@ -309,10 +310,10 @@ strong{
 	font-weight: 400;
 } */
 
-.mobile{}
+/* .mobile{}
 body .desktop{
 	display: none;
-}
+} */
 
 
 
@@ -407,7 +408,7 @@ body .desktop{
 } */
 
 
-@include medium{
+/* @include medium{
 	.button{
 		max-width: 28.125rem;
 	}
@@ -428,7 +429,7 @@ body .desktop{
 			display: flex;
 		}
 	}
-}
+} */
 
 /* @include xlarge{
 	.site-main{

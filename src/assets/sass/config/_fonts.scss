@@ -30,13 +30,13 @@
 //@import url('//hello.myfonts.net/count/2fd4b0');
 //@import url('//fonts.googleapis.com/css?family=Prompt:300,400,500');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:wght@100..900&display=swap');
 
 //Fonts
 $fonts: (
-  "mo":"'Montserrat', sans-serif",
-  "lo":"'Lora', serif"
+  "co":"'Comfortaa', serif",
+  "ra":"'Raleway', serif"
 );
 
 //Mixins de Google Fonts basadas en array $fonts. Ex: @include font('os','bold');

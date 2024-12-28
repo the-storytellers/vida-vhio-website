@@ -16,21 +16,23 @@ $browser-context: 16;
 :root{
 	// - Colors - //
 	/* --colors-primary: var(--colors-black); */
-	--colors-primary: var(--colors-blue);
-	--colors-corporate: var(--colors-blue);
+	--colors-primary: var(--colors-black);
+	--colors-corporate: var(--colors-yellow);
 	--colors-error: #ea2002;
 	--colors-ok: #398f14;
 	--colors-black: #000000;
 	--colors-white: #ffffff;
-	--colors-blue: #253746;
+	--colors-yellow: #FCEA10;
+	--colors-blue: #2D5AA6;
+	--colors-orange: #CE5E16;
 	/* --colors-orange: #E36A2D;
 	--colors-yellow: #E5F244; */
-	--colors-grey: #E5E7E9;
+	/* --colors-grey: #E5E7E9;
 	--colors-image-filter-bg: #4c718f;
 	--colors-newsletter-input: #757575;
 	--colors-corporate-rgb: 37, 55, 70;		// #253746 en RGB
 	--colors-white-rgb: 255, 255, 255;		// #ffffff en RGB
-	--colors-modal-bg: var(--colors-corporate-rgb);		// #253746 en RGB
+	--colors-modal-bg: var(--colors-corporate-rgb);		// #253746 en RGB */
 
 	// - Font sizes - //
 	--general-font-size: 1rem;			// 16px
@@ -93,14 +95,14 @@ $browser-context: 16;
 	--swiper-navigation-color: var(--colors-corporate);
 }
 
-@include xlarge{
+/* @include xlarge{
 	:root{
 		--site-header-block: 2.25rem;			// top and bottom
 	}
-}
+} */
 
-@include xxlarge{
+/* @include xxlarge{
 	:root{
 		--content-side-padding: 9.375rem;
 	}
-}
+} */
