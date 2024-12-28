@@ -74,6 +74,7 @@ cssOpts = {
         outputStyle         : 'compressed',
         /* precision           : 10,
         errLogToConsole     : true */
+        silenceDeprecations: ['legacy-js-api', 'import', 'global-builtin']
     },
 },
 
