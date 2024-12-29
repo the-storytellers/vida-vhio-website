@@ -138,14 +138,21 @@ add_action( 'widgets_init', 'vida_widgets_init' );
  * Enqueue scripts and styles.
  */
 function vida_scripts() {
-	wp_enqueue_style( 'vida-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'vida-style-vendor', get_template_directory_uri() . '/assets/styles/vendor.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'vida-style-main', get_template_directory_uri() . '/assets/styles/main.min.css', array('vida-style-vendor'), _S_VERSION );
+
+	/* wp_enqueue_script( 'vida-script-vendor', get_template_directory_uri() . '/assets/scripts/vendor.min.js', array('jquery'), _S_VERSION, true );
+	wp_enqueue_script( 'vida-script-main', get_template_directory_uri() . '/assets/scripts/main.min.js', array('jquery', 'vida-script-vendor'), _S_VERSION, true ); */
+	wp_enqueue_script( 'vida-script-main', get_template_directory_uri() . '/assets/scripts/main.min.js', array('jquery'), _S_VERSION, true );
+
+	/* wp_enqueue_style( 'vida-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'vida-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'vida-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
-	}
+	} */
 }
 add_action( 'wp_enqueue_scripts', 'vida_scripts' );
 

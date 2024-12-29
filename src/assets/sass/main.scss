@@ -8,7 +8,7 @@ $browser-context: 16;
 $small: em(551);
 $medium: em(768);
 $large: em(1024);
-$xlarge: em(1440);
+$xlarge: em(1280);
 //$xxlarge: em(1920);
 $small-up: "only screen and (min-width:#{$small})";
 $medium-up: "only screen and (min-width:#{$medium})";
@@ -23,8 +23,9 @@ $xlarge-up: "only screen and (min-width:#{$xlarge})";
 @import "config/base";
 
 //Components
-/* @import "components/header/xsmall";
+@import "components/header/xsmall";
 @import "components/modal/xsmall";
+/* @import "components/modal/xsmall";
 @import "components/hero/xsmall";
 @import "components/section/xsmall";
 @import "components/slider/xsmall";

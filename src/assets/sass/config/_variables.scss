@@ -44,9 +44,10 @@ $browser-context: 16;
 	--inner-side-padding--narrow: 9.6875%;
 	--inner-max-width: 80rem;		// 1280px */
 	/* --content-side-padding: 7.7%; */
-	--content-side-padding: 7.7vw;
-	--content-max-width: 120rem;		// 1920px
-	--content-narrow-width: 66.625rem;		// 1066px
+	/* --content-side-padding: 8.33vw; */
+	--content-side-padding: 5.13vw;
+	--content-max-width: 90rem;		// 1440px
+	//--content-narrow-width: 66.625rem;		// 1066px
 	
 	
 	// - Header - //
@@ -54,10 +55,12 @@ $browser-context: 16;
 	//--site-header-height: 3.8125rem;
 	--site-header-height: 3.6875rem; */
 	/* --site-header-block: clamp(.9375rem,1.875vw,2.25rem);			// top and bottom */
-	--site-header-block: .9375rem;			// top and bottom
-	--site-header-block-modal: 3.375rem;			// top and bottom
+	/* --site-header-block: .9375rem;			// top and bottom */
+	--site-header-block: clamp(.3125rem,.56vw,.5rem);			// top and bottom
+	/* --site-header-block-modal: 3.375rem;			// top and bottom */
 	/* --site-header-height: 3.6875rem; */
-	--mobile-menu-block-modal: 8.375rem; 			// top and bottom
+	/* --mobile-menu-block-modal: 8.375rem; 			// top and bottom */
+	--mobile-menu-block-modal: 6.4375rem; 			// top and bottom
 	--desktop-submenu-block: 3.125rem; 			// top and bottom
 	--desktop-submenu-inline: .875rem; 			// left and right
 	
@@ -93,6 +96,12 @@ $browser-context: 16;
 	--swiper-navigation-sides-offset: calc(((var(--swiper-navigation-size)*2/3) * -1) - .75rem);
 	/* --swiper-navigation-sides-offset: 0; */
 	--swiper-navigation-color: var(--colors-corporate);
+}
+
+@include medium{
+	:root{
+		--content-side-padding: 8.33vw;
+	}
 }
 
 /* @include xlarge{

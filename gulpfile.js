@@ -265,4 +265,4 @@ function server(done) {
 //** Default Tasks **//
 /* exports.default = gulp.series(exports.clean, gulp.parallel(exports.basics, exports.fonts, exports.cssVendor, exports.jsVendor), exports.images, gulp.parallel(exports.css, exports.js), exports.markup, watch, server); */
 /* exports.default = gulp.series(exports.clean, gulp.parallel(exports.basics, exports.cssVendor, exports.jsVendor), exports.images, gulp.parallel(exports.css, exports.js), exports.markup, watch, server); */
-exports.default = gulp.series(exports.clean, gulp.parallel(exports.basics), exports.markup, watch, server);
+exports.default = gulp.series(exports.clean, gulp.parallel(exports.basics, exports.cssVendor), exports.images, gulp.parallel(exports.css, exports.js), exports.markup, watch, server);
