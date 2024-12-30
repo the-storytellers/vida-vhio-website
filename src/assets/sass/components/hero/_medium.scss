@@ -1,0 +1,28 @@
+.c-hero{
+	height: min(44.27vw, 53.125rem);
+
+    &__bg{
+        img{}
+    }
+
+	&__inner{
+		grid-template-columns: 1fr 1fr 1fr;
+        gap: var(--grid-gap);
+	}
+
+    &__content{}
+
+	&__caption{
+		padding-block-end: .64em;		// 1rem desktop
+		line-height: 1.5em;
+	}
+	
+	&__desc{
+		margin-block-start: .714285rem;
+		line-height: 1.25em;		// 1.25em desktop
+	}
+
+	&__button{
+		margin-block-start: 2.25em;		// 3.125rem desktop
+	}
+}

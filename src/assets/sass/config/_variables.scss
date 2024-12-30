@@ -35,9 +35,11 @@ $browser-context: 16;
 	--colors-modal-bg: var(--colors-corporate-rgb);		// #253746 en RGB */
 
 	// - Font sizes - //
-	--general-font-size: 1rem;			// 16px
+	/* --general-font-size: 1rem;			// 16px
 	--general-line-height: 1em;			// 1 * 16px = 16px
-	--general-line-height-number: 1; 		// 1 * 16px = 16px
+	--general-line-height-number: 1; 		// 1 * 16px = 16px */
+	--general-font-size: 1.125rem;			// 18px
+	--general-line-height: 1.35em;			// 1.35 * 18px = 24.3px
 
 	//- General - //
 	/* --inner-side-padding: 3.90625%;
@@ -66,6 +68,9 @@ $browser-context: 16;
 	--desktop-submenu-block: 3.125rem; 			// top and bottom
 	--desktop-submenu-inline: .875rem; 			// left and right
 	
+	//- Hero -//
+	--hero-height: 28.5rem;
+
 	//- Button - //
 	/* --button-padding: 0 1.25em;
 	--button-font-size: clamp(.875rem, 1.25vw, 1rem);
