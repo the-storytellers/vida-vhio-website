@@ -54,9 +54,11 @@ $browser-context: 16;
 	/* --site-header-padding: .75rem;			// top and bottom
 	//--site-header-height: 3.8125rem;
 	--site-header-height: 3.6875rem; */
+	--site-header-height: 4.6875rem;
 	/* --site-header-block: clamp(.9375rem,1.875vw,2.25rem);			// top and bottom */
 	/* --site-header-block: .9375rem;			// top and bottom */
-	--site-header-block: clamp(.3125rem,.56vw,.5rem);			// top and bottom
+	/* --site-header-block: clamp(.3125rem,.56vw,.5rem);			// top and bottom */
+	--site-header-block: .3125rem;			// top and bottom
 	/* --site-header-block-modal: 3.375rem;			// top and bottom */
 	/* --site-header-height: 3.6875rem; */
 	/* --mobile-menu-block-modal: 8.375rem; 			// top and bottom */

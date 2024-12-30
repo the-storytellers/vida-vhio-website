@@ -34,7 +34,7 @@ $logo = $theme."/assets/images/logo-vida.png";
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'vida' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="layout">
+		<div class="layout full-height">
 			<div class="site-header__content">
 				<div class="site-branding">
 					<?php
