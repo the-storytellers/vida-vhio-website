@@ -50,6 +50,7 @@ $browser-context: 16;
 	--content-side-padding: 5.13vw;
 	--content-max-width: 90rem;		// 1440px
 	//--content-narrow-width: 66.625rem;		// 1066px
+	--bg-space-top: calc(var(--site-header-height) + 1.4375rem);
 	
 	
 	// - Header - //
