@@ -1,0 +1,55 @@
+.c-card{
+	color: var(--colors-primary);
+	background-color: var(--colors-white);
+	border: 1px solid currentColor;
+	/* border-radius: var(--card-border-radius); */
+
+	&__image{
+		padding: var(--card-padding-y) var(--card-padding-x) 0;
+		img{
+			display: block;
+			width: 100%;
+			height: 12.75rem;
+			object-fit: scale-down;
+			/* aspect-ratio: 70/41;		// aspect-ratio for 280x164 */
+		}
+	}
+
+	&__content{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: var(--card-min-height);
+		padding: var(--card-content-padding-top) var(--card-padding-x) var(--card-padding-y);
+		text-align: left;
+	}
+
+	&__primary{}
+
+	&__secondary{
+		margin-block-start: 2.25rem;
+	}
+
+	&__desc{
+		margin-block-start: 1.125rem;
+		/* font-size: clamp(.75rem, 1.40625vw, 1.125rem);
+		line-height: 1.56em; */
+	}
+}
+
+//Mobile first: Small breakpoint imports larger breakpoints
+/*@include small {
+    @import 'small';
+}*/
+/* @include medium {
+    @import 'medium';
+} */
+/*@include large {
+    @import 'large';
+}
+@include xlarge {
+    @import 'xlarge';
+}
+@include xxlarge {
+    @import 'xxlarge';
+}*/

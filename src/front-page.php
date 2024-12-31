@@ -14,6 +14,7 @@
 
 $theme = get_stylesheet_directory_uri();
 $heroBg = $theme."/assets/images/placeholders/home-hero-background.jpg";
+$associatedPartnersLogo = $theme."/assets/images/placeholders/associated-partners-logo.png";
 
 get_header();
 ?>
@@ -72,6 +73,82 @@ get_header();
 						<p>Through the VHIO Academy established in 2021, the institute aims to attract young talent globally and provide state-of-the-art training and career development opportunities.</p>
 					</div>
 					<a href="#" target="_blank" class="button button--fs-constant">The project</a>
+				</div>
+			</div>
+		</section>
+		<section class="c-section c-section--no-padding-top">
+			<div class="c-section__header">
+				<h2 class="c-section__title heading1">Associated Partners</h2>
+				<div class="c-section__desc text1 text1--fs-constant">
+					<p>Lorem ipsum dolor sit amet consectetur. Platea mollis ipsum dolor justo. Urna volutpat nam molestie mattis justo diam amet tortor. Malesuada ullamcorper feugiat arcu ultrices non odio.</p>
+				</div>
+			</div>
+			<div class="c-grid">
+				<div class="c-card">
+					<!-- <div class="c-card__image">
+						<?php 
+							//$imageId = get_post_thumbnail_id();
+							//$imageAlt = get_post_meta($imageId, '_wp_attachment_image_alt', TRUE);
+						?>
+						<img src="<?php //the_post_thumbnail_url(); ?>" alt="<?php //echo $imageAlt; ?>">
+					</div>
+					<div class="c-card__content">
+						<div class="c-card__primary">
+							<h3 class="c-card__title"><?php //echo $iFields['info']['name']; ?></h3>
+							<div class="c-card__city-country"><?php //echo $iFields['info']['city']; ?></div>
+							<div class="c-card__desc"><?php //echo $iFields['info']['desc']; ?></div>
+						</div>
+						<div class="c-card__secondary">
+							<a href="<?php //the_permalink(); ?>" class="button"><?php //echo get_field('read_more', 'options'); ?></a>
+						</div>
+					</div> -->
+
+					<div class="c-card__image">
+						<img src="<?php echo $associatedPartnersLogo; ?>" alt="">
+					</div>
+					<div class="c-card__content">
+						<div class="c-card__primary">
+							<h3 class="c-card__title heading3 uppercase">Lorem Ipsum</h3>
+							<div class="c-card__desc text2">
+								<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus.</p>
+							</div>
+							<div class="c-card__secondary">
+								<a href="#" class="button button--fs-constant">Ver más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="c-card">
+					<div class="c-card__image">
+						<img src="<?php echo $associatedPartnersLogo; ?>" alt="">
+					</div>
+					<div class="c-card__content">
+						<div class="c-card__primary">
+							<h3 class="c-card__title heading3 uppercase">Lorem Ipsum</h3>
+							<div class="c-card__desc text2">
+								<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus.</p>
+							</div>
+							<div class="c-card__secondary">
+								<a href="#" class="button button--fs-constant">Ver más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="c-card">
+					<div class="c-card__image">
+						<img src="<?php echo $associatedPartnersLogo; ?>" alt="">
+					</div>
+					<div class="c-card__content">
+						<div class="c-card__primary">
+							<h3 class="c-card__title heading3 uppercase">Lorem Ipsum</h3>
+							<div class="c-card__desc text2">
+								<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus.</p>
+							</div>
+							<div class="c-card__secondary">
+								<a href="#" class="button button--fs-constant">Ver más</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

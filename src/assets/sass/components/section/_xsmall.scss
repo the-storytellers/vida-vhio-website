@@ -44,6 +44,16 @@
 		margin-block-start: clamp(1.5rem,3.125vw,3.75rem);
 	} */
 
+	&__header{
+		text-align: center;
+	}
+
+	&__desc{
+		* + &{
+			margin-block-start: 1.5rem;
+		}
+	}
+
 	/* &--about{
 		padding-block: clamp(4.6875rem,11.46vw,13.75rem) clamp(4.6875rem,8.33vw,10rem);
 		
@@ -113,6 +123,10 @@
 		//	padding-inline-end: var(--content-side-padding);
 		//}
 	} */
+
+	&--no-padding-top{
+		padding-block-start: 0;
+	}
 }
 
 //Mobile first: Small breakpoint imports larger breakpoints

@@ -1,0 +1,50 @@
+.c-grid{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;*/
+    //gap: var(--grid-gap);
+
+    /* &[data-cols="2"]{
+        
+    }
+
+    &--news{
+        align-items: start;
+        gap: var(--grid-gap-news);
+    }
+    
+    &--team{
+        margin-block-start: 2.8125rem;
+        row-gap: clamp(2.8125rem,6.25vw,7.5rem);
+    }
+    
+    &--footer{
+        gap: var(--grid-gap-footer);
+    }
+
+    &--newsletter{
+        row-gap: 2.8125rem;
+    } */
+
+    * + &{
+        margin-top: 4.5rem;
+    }
+}
+
+//Mobile first: Small breakpoint imports larger breakpoints
+/*@include small {
+    @import 'small';
+}*/
+
+@include medium {
+    @import 'medium';
+}
+
+/*@include large {
+    @import 'large';
+}
+@include xlarge {
+    @import 'xlarge';
+}
+@include xxlarge {
+    @import 'xxlarge';
+}*/
