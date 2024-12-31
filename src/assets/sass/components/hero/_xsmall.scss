@@ -25,7 +25,8 @@
 	}
 
 	&__content{
-		padding-block: 2rem;
+		/* padding-block: 2rem; */
+		padding-block: 3.75rem;
 		//color: var(--colors-white);
 		text-align: center;
 	}
@@ -56,6 +57,19 @@
 		gap: 1.5rem;
 		/* margin-block-start: 1.25rem;		// 3.125rem desktop */
 		margin-block-start: 3rem;
+	}
+	
+	&--banner{
+		height: 45.25rem;
+		color: var(--colors-white);
+
+		/* .c-hero__inner{
+			align-items: end;
+		} */
+
+		.c-hero__buttons{
+			margin-block-start: 1.5rem;
+		}
 	}
 }
 

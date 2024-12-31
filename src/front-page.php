@@ -15,6 +15,8 @@
 $theme = get_stylesheet_directory_uri();
 $heroBg = $theme."/assets/images/placeholders/home-hero-background.jpg";
 $associatedPartnersLogo = $theme."/assets/images/placeholders/associated-partners-logo.png";
+$bannerBg = $theme."/assets/images/placeholders/home-banner-background.jpg";
+$bannerBgMobile = $theme."/assets/images/placeholders/home-banner-background-mobile.jpg";
 
 get_header();
 ?>
@@ -148,6 +150,21 @@ get_header();
 								<a href="#" class="button button--fs-constant">Ver más</a>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="c-hero c-hero--banner full-width layout">
+			<picture class="c-hero__bg full-width">
+				<source srcset="<?php echo $bannerBgMobile; ?>" media="(max-width: 767px)" />
+				<img src="<?php echo $bannerBg; ?>" alt="">
+			</picture>
+			<div class="c-hero__inner">
+				<div class="c-hero__content">
+					<h2 class="c-hero__title heading1">How to apply</h2>
+					<p class="c-hero__desc text1">Lorem ipsum dolor sit amet consectetur. Scelerisque tempor nibh nibh sit eleifend ut tortor id urna.</p>
+					<div class="c-hero__buttons">
+						<a href="#" target="_blank" class="button button--transparent button--fs-constant">Apply</a>
 					</div>
 				</div>
 			</div>

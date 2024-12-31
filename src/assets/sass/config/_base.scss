@@ -236,6 +236,11 @@ strong{
 	&--fs-constant{
 		font-size: 1.125rem;
 	}
+
+	&--transparent{
+		color: currentColor;
+		background-color: transparent;
+	}
 }
 
 /* .link{
