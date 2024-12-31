@@ -48,3 +48,7 @@ wordpress/.user.ini
 #wordpress/wordfence-waf.php
 wordpress/wp-content/wflogs/
 wordpress/wp-content/plugins/wordfence/tmp/configCache.php
+
+
+### SiteGround ###
+/.htaccess
