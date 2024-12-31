@@ -86,10 +86,13 @@ $browser-context: 16;
 	--button-filled-bg-color: var(--colors-corporate);
 	--button-large-min-width: 11.625em; */
 
+	//- Cols -//
+	--cols-gap: 3.75rem;
+
 	//- Grid -//
-	--grid-gap: clamp(1rem,2.083vw,2.5rem);
+	/* --grid-gap: clamp(1rem,2.083vw,2.5rem);
 	--grid-gap-news: clamp(2.1875rem,2.083vw,2.5rem);
-	--grid-gap-footer: 4.6875rem;
+	--grid-gap-footer: 4.6875rem; */
 
 	//- Margins -//
 	--basic-block-start: clamp(2.8125rem, 3.125vw, 3.75rem);
@@ -118,8 +121,9 @@ $browser-context: 16;
 	}
 } */
 
-/* @include xxlarge{
+@include xxlarge{
 	:root{
-		--content-side-padding: 9.375rem;
+		/* --content-side-padding: 9.375rem; */
+		--content-side-padding: 7.5rem;
 	}
-} */
+}

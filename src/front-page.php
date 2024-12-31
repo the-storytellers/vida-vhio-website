@@ -60,6 +60,21 @@ get_header();
 				</div>
 			</div>
 		</section>
+		<section class="c-section">
+			<div class="c-info c-cols" data-template="1-2">
+				<div class="col1">
+					<h2 class="c-info__title heading2">About us</h2>
+				</div>
+				<div class="col2">
+					<p class="heading3 uppercase icon-half-moon">The project</p>
+					<div class="c-info__desc text2">
+						<p>One of VHIO's main missions is to train and inspire the next generation of leading cancer researchers and medical doctors in Oncology to drive research and innovation and tackle the societal challenges of tomorrow.</p>
+						<p>Through the VHIO Academy established in 2021, the institute aims to attract young talent globally and provide state-of-the-art training and career development opportunities.</p>
+					</div>
+					<a href="#" target="_blank" class="button button--fs-constant">The project</a>
+				</div>
+			</div>
+		</section>
 	</main><!-- #main -->
 
 <?php

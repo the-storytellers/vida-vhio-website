@@ -9,12 +9,12 @@ $small: em(551);
 $medium: em(768);
 $large: em(1024);
 $xlarge: em(1280);
-//$xxlarge: em(1920);
+$xxlarge: em(1440);
 $small-up: "only screen and (min-width:#{$small})";
 $medium-up: "only screen and (min-width:#{$medium})";
 $large-up: "only screen and (min-width:#{$large})";
 $xlarge-up: "only screen and (min-width:#{$xlarge})";
-//$xxlarge-up: "only screen and (min-width:#{$xxlarge})";
+$xxlarge-up: "only screen and (min-width:#{$xxlarge})";
 
 //Config local
 @import "config/mixins";        // Mixins. Funciones auxiliares: centrado vertical, columnas equidistantes, etc.
@@ -26,10 +26,11 @@ $xlarge-up: "only screen and (min-width:#{$xlarge})";
 @import "components/header/xsmall";
 @import "components/modal/xsmall";
 @import "components/hero/xsmall";
-/* @import "components/section/xsmall";
-@import "components/slider/xsmall";
-@import "components/grid/xsmall";
+@import "components/section/xsmall";
 @import "components/cols/xsmall";
+@import "components/info/xsmall";
+/* @import "components/slider/xsmall";
+@import "components/grid/xsmall";
 @import "components/practice-area/xsmall";
 @import "components/news/xsmall";
 @import "components/logos/xsmall";

@@ -1,0 +1,41 @@
+.c-cols{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: var(--grid-gap); */
+    gap: var(--cols-gap);
+
+    /* &[data-template="0-1-1"]{} */
+
+    /* &[data-template="0-2"]{}
+    
+    &[data-template="0-2-fr"]{} */
+    
+    &[data-template="1-2"]{}
+    
+    /* &[data-template="1-2-fr"]{}
+
+    &[data-template="2-0"]{} */
+
+    &[data-template="2-1"]{}
+
+    /* &[data-template="2-1-fr"]{} */
+}
+
+//Mobile first: Small breakpoint imports larger breakpoints
+/*@include small {
+    @import 'small';
+}*/
+
+/* @include medium {
+    @import 'medium';
+} */
+
+/*@include large {
+    @import 'large';
+}
+@include xlarge {
+    @import 'xlarge';
+}
+@include xxlarge {
+    @import 'xxlarge';
+}*/

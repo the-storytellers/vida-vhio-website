@@ -1,0 +1,86 @@
+.c-info{
+	/* padding-top: var(--info-padding-y);
+	padding-bottom: var(--info-padding-y);
+	color: var(--info-text-color);
+	background-color: var(--info-bg-color);
+	
+	&__content{
+		//display: flex;
+	}
+
+	&__title{
+		//font-size: clamp(2rem, 7.5vw, 6rem);
+		font-size: clamp(2rem, 6.25vw, 5rem);
+		line-height: .9375em;
+		text-transform: uppercase;
+	}
+	
+	&__description{
+		margin-top: 1.25rem;
+
+		.button{
+			margin-top: var(--info-button-margin-top);
+		}
+	}
+
+	&__text{
+		font-size: clamp(1rem, 1.40625vw, 1.125rem);
+		line-height: 1.39em;
+		
+		> p:nth-child(1){
+			font-size: clamp(1.25rem, 2.1875vw, 1.75rem);
+			line-height: 1.14em;
+		}
+
+		* + *{
+			//margin-top: .75rem;
+			margin-top: var(--info-paragraph-margin-top);
+		}
+	}
+	
+	&--alt{
+		--info-text-color: var(--colors-corporate);
+		--info-bg-color: var(--colors-grey);
+
+		.c-info__title{
+			font-size: clamp(2rem, 7.5vw, 6rem);
+		}
+	} */
+
+	* + .button{
+		margin-block-start: 1.125rem;
+	}
+
+	&__title{}
+
+	&__desc{
+		* + *{
+			margin-block-start: 1em;
+		}
+
+		* + &{
+			margin-block-start: 1.125rem;
+		}
+	}
+
+	/* &__button{} */
+}
+
+//Mobile first: Small breakpoint imports larger breakpoints
+/*@include small {
+    @import 'small';
+}*/
+
+/* @include medium {
+    @import 'medium';
+} */
+
+/*@include large {
+    @import 'large';
+}
+@include xlarge {
+    @import 'xlarge';
+}
+@include xxlarge {
+    @import 'xxlarge';
+}*/

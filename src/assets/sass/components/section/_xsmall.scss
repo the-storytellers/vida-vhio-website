@@ -1,0 +1,135 @@
+.c-section{
+	/* padding-block: clamp(4.6875rem,8.33vw,10rem); */
+	padding-block: 4.5rem;
+
+	/* &__header{
+		margin-block-start: clamp(1.875rem,6.25vw,7.5rem);
+	}
+
+	&__title{
+		& + .c-section__caption{
+			margin-top: 0.5rem;
+		}
+	}
+
+	&__intro{
+		> * + *{
+			margin-block-start: .8em;
+		}
+		
+		* + &{
+			margin-block-start: clamp(1.5625rem,1.5625vw,1.875rem);
+		}
+
+		& + .link{
+			margin-block-start: .75em;
+		}
+	}
+
+	&__media{
+		margin-block-start: clamp(2.8125rem,3.125vw,3.75rem);
+
+		img{
+			width: 100%;
+		}
+	}
+
+	&__desc{
+		margin-block-start: clamp(1.875rem,3.90625vw,4.6875rem);
+	}
+
+	&__footer{
+		display: flex;
+		justify-content: center;
+		margin-block-start: clamp(1.5rem,3.125vw,3.75rem);
+	} */
+
+	/* &--about{
+		padding-block: clamp(4.6875rem,11.46vw,13.75rem) clamp(4.6875rem,8.33vw,10rem);
+		
+		> img{
+			width: 100%;
+			margin-block-start: clamp(1.875rem,3.125vw,3.75rem);
+			//margin-inline: calc(var(--content-side-padding) * -1);
+			grid-column: full-width;
+		}
+		
+		.c-section__intro{
+			margin-block-start: .75em;
+		}
+	}
+	
+	&--associations{
+		padding-block: 6rem;
+		row-gap: 7.5rem;
+		align-items: center;
+		text-align: center;
+
+		> *:nth-child(1){
+			order: 1;
+		}
+
+		> *:nth-child(2){
+			order: 2;
+		}
+	}
+
+	&--value{
+		.c-section__media{
+			margin-block-start: clamp(2.5rem,3.90625vw,4.6875rem);
+		}
+	}
+
+	&--alt{
+		color: var(--colors-white);
+		background-color: var(--colors-corporate);
+		padding-block-end: clamp(3.75rem,5.4167vw,6.5rem);
+		
+		.c-section__desc{
+			margin-block-start: clamp(.75rem,3.125vw,3.75rem);
+		}
+	}
+	
+	&--international{
+		padding-block-end: 0;
+
+		img{
+			margin-block-start: clamp(3.75rem,6.25vw,7.5rem);
+		}
+
+		* + .button{
+			margin-block-start: 1.875rem;
+		}
+	}
+
+	&--contact{
+		padding-block-start: clamp(1.875rem,6.25vw,7.5rem);
+	}
+	
+	&--no-padding-bottom{
+		padding-block-end: 0;
+
+		//.c-section__title{
+		//	padding-inline-end: var(--content-side-padding);
+		//}
+	} */
+}
+
+//Mobile first: Small breakpoint imports larger breakpoints
+/*@include small {
+    @import 'small';
+}*/
+
+/* @include medium {
+    @import 'medium';
+} */
+
+/*@include large {
+    @import 'large';
+}
+@include xlarge {
+    @import 'xlarge';
+}
+@include xxlarge {
+    @import 'xxlarge';
+}*/
