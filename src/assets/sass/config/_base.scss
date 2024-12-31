@@ -16,7 +16,8 @@ body {
     line-height: var(--general-line-height);
 	font-weight: 400;
 	background-image: url("../images/bg.svg");
-	background-position: center var(--bg-space-top);
+	/* background-position: center var(--bg-space-top); */
+	background-position: left var(--bg-space-top);
 	background-repeat: repeat;
 	/* background-size: cover; */
     background-color: var(--colors-white);
