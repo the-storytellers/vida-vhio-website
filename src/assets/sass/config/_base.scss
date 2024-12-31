@@ -534,8 +534,11 @@ body .desktop{
 	}
 } */
 
-/* @include xlarge{
-	.site-main{
-		padding-block-start: 6.3125rem;
+@include xlarge{
+	body{
+		background-position: center var(--bg-space-top);
 	}
-} */
+	/* .site-main{
+		padding-block-start: 6.3125rem;
+	} */
+}
