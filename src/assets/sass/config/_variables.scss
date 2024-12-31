@@ -116,20 +116,26 @@ $browser-context: 16;
 	--swiper-navigation-color: var(--colors-corporate);
 }
 
-@include medium{
+/* @include medium{
 	:root{
 		--content-side-padding: 8.33vw;
 	}
-}
-
-/* @include xlarge{
-	:root{
-		--site-header-block: 2.25rem;			// top and bottom
-	}
 } */
+
+@include xlarge{
+	:root{
+		// - General - //
+		--content-side-padding: 8.33vw;
+
+		// - Header - //
+		--site-header-height: 5.5rem;
+		--site-header-block: .4375rem;			// top and bottom
+	}
+}
 
 @include xxlarge{
 	:root{
+		// - General - //
 		/* --content-side-padding: 9.375rem; */
 		--content-side-padding: 7.5rem;
 	}

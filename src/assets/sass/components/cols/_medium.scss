@@ -77,7 +77,7 @@
     } */
 
     &[data-template="2-1"]{
-        grid-template-columns: 
+        /* grid-template-columns: 
             [col-1-start] 1fr var(--grid-gap) 1fr [col-1-end]
             var(--grid-gap) 
             [col-2-start] 1fr [col-2-end];
@@ -88,7 +88,9 @@
 
         > .col2{
             grid-column: col-2;
-        }
+        } */
+
+        grid-template-columns: 1.2772fr .7228fr;            /* 728px 412px in 1200 container*/
     }
     
     /* &[data-template="2-1-fr"]{

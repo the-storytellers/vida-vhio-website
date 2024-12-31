@@ -26,9 +26,9 @@
     @import 'small';
 }*/
 
-/* @include medium {
+@include medium {
     @import 'medium';
-} */
+}
 
 /*@include large {
     @import 'large';
