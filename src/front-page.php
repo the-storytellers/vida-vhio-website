@@ -67,7 +67,7 @@ get_header();
 		<section class="c-section">
 			<div class="c-info c-cols" data-template="1-2">
 				<div class="col1">
-					<h2 class="c-info__title heading2">About us</h2>
+					<h2 class="c-info__title heading2 heading2--fs-constant">About us</h2>
 				</div>
 				<div class="col2">
 					<p class="heading3 uppercase icon-half-moon">The project</p>
@@ -171,18 +171,33 @@ get_header();
 			</div>
 		</section>
 		<section class="c-section">
-			<div class="c-info c-cols" data-template="1-2">
+			<div class="c-info c-cols" data-template="2-1">
 				<div class="col1">
-					<h2 class="c-info__title heading2 uppercase">Variable section</h2>
+					<h2 class="c-info__title heading2 heading2--fs-constant uppercase">Variable section</h2>
 					<div class="c-info__desc text2">
-						<p>One of VHIO's main missions is to train and inspire the next generation of leading cancer researchers and medical doctors in Oncology to drive research and innovation and tackle the societal challenges of tomorrow.</p>
-						<p>Through the VHIO Academy established in 2021, the institute aims to attract young talent globally and provide state-of-the-art training and career development opportunities.</p>
+						<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus pellentesque consectetur.</p>
+						<p>Orci et urna tincidunt curabitur ullamcorper viverra interdum cursus. Congue blandit ultricies consequat nunc suspendisse id imperdiet.</p>
+						<p>Suscipit blandit arcu at quam nam. Praesent a ac gravida eget sed egestas eget. Ultrices dolor vel leo malesuada donec amet turpis erat.</p>
 					</div>
-					<a href="#" target="_blank" class="button button--fs-constant">The project</a>
+					<a href="#" target="_blank" class="button button--fs-constant">Button 01</a>
 				</div>
 				<div class="col2">
 					<div class="c-info__image">
 						<img src="<?php echo $variableSectionImage; ?>" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="c-section c-section--big-padding-block full-width layout bg-yellow">
+			<div class="c-info c-cols" data-template="1-2">
+				<div class="col1">
+					<h2 class="c-info__title heading2 heading2--fs-constant">Contact Us</h2>
+					<a href="#" target="_blank" class="button button--transparent button--fs-constant">Contact us</a>
+				</div>
+				<div class="col2">
+					<div class="c-info__desc text2">
+						<p>VHIO VIDA Management Team has created a devoted Helpdesk& Technical Support Service that will be active throughout the duration of the programme and will be accessible to interested applicants.</p>
+						<p>The Helpdesk Service will be useful during the Application and Selections Processes. Candidates are encouraged to contact the Helpdesk service via email to resolve any questions or issues regarding the selection processes.</p>
 					</div>
 				</div>
 			</div>

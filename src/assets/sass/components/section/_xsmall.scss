@@ -127,6 +127,10 @@
 	&--no-padding-top{
 		padding-block-start: 0;
 	}
+
+	&--big-padding-block{
+		padding-block: 6.25rem;
+	}
 }
 
 //Mobile first: Small breakpoint imports larger breakpoints
