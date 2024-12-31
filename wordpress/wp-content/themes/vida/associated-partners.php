@@ -70,6 +70,54 @@ get_header();
 						</div>
 					</div>
 				</div>
+				<div class="c-card">
+					<div class="c-card__image">
+						<img src="<?php echo $associatedPartnersLogo; ?>" alt="">
+					</div>
+					<div class="c-card__content">
+						<div class="c-card__primary">
+							<h3 class="c-card__title heading3 uppercase">Lorem Ipsum</h3>
+							<div class="c-card__desc text2">
+								<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus.</p>
+							</div>
+							<div class="c-card__secondary">
+								<a href="#" class="button">Ver más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="c-card">
+					<div class="c-card__image">
+						<img src="<?php echo $associatedPartnersLogo; ?>" alt="">
+					</div>
+					<div class="c-card__content">
+						<div class="c-card__primary">
+							<h3 class="c-card__title heading3 uppercase">Lorem Ipsum</h3>
+							<div class="c-card__desc text2">
+								<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus.</p>
+							</div>
+							<div class="c-card__secondary">
+								<a href="#" class="button">Ver más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="c-card">
+					<div class="c-card__image">
+						<img src="<?php echo $associatedPartnersLogo; ?>" alt="">
+					</div>
+					<div class="c-card__content">
+						<div class="c-card__primary">
+							<h3 class="c-card__title heading3 uppercase">Lorem Ipsum</h3>
+							<div class="c-card__desc text2">
+								<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus.</p>
+							</div>
+							<div class="c-card__secondary">
+								<a href="#" class="button">Ver más</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main><!-- #main -->
