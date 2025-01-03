@@ -47,11 +47,6 @@ h1,h2,h3,h4,h5,h6{
 }
 ul{
     list-style-type: none;
-
-	.site-main &{
-		list-style-type: disc;
-		margin-inline-start: 1em;
-	}
 }
 /* img{display: block} */
 abbr[title]{text-decoration: none}
@@ -118,6 +113,15 @@ strong{
 	padding-block-start: var(--site-header-height);
 	align-items: start;
 	align-content: start;
+
+	ul{
+		list-style-type: disc;
+		margin-inline-start: 1em;
+		
+		li + li{
+			margin-block-start: 1em;
+		}
+	}
 }
 /* .inner{
 	margin: 0 auto;

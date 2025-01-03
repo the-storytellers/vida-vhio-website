@@ -54,7 +54,7 @@
 	&__title{}
 
 	&__desc{
-		* + *{
+		> * + *{
 			margin-block-start: 1em;
 		}
 
