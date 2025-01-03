@@ -31,7 +31,7 @@ $globe = wp_remote_retrieve_body($iconGlobe);
 			</div>
 			<div class="c-footer__info">	
 				<a href="#" class="c-footer__logo"><img src="<?php echo $logoEU; ?>" alt=""></a>
-				<p class="text3">This project has received funding from the European Union's Horizon Europe research andinnovation programme under the Marie Skłodowska-Curie grant agreement No 101179122</p>
+				<p class="text3 text3--fs-constant">This project has received funding from the European Union's Horizon Europe research andinnovation programme under the Marie Skłodowska-Curie grant agreement No 101179122</p>
 			</div>
 		</div>
 		<div class="c-footer__rrss">

@@ -192,7 +192,12 @@ strong{
 	font-size: 1.125rem;
 }
 .text3{
-	font-size: .87125rem;
+	/* font-size: .87125rem; */
+	font-size: clamp(.87125rem,1.25vw,1.125rem);
+
+	&--fs-constant{
+		font-size: .87125rem;
+	}
 }
 
 /* .button{
