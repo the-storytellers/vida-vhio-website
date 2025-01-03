@@ -1,0 +1,59 @@
+.c-page{
+	/* h2{
+		font-size: clamp(1.25rem, 2.1875vw, 1.75rem);
+		line-height: 1.14em;
+		font-weight: 400;
+		color: var(--colors-corporate);
+		text-transform: uppercase;
+	}
+	p,
+	ul li{
+		font-size: clamp(.875rem, 1.40625vw, 1.125rem);
+		line-height: 1.56em;
+	}
+
+	ul{
+		margin-left: 1em;
+		list-style-type: disc;
+		list-style-position: inside;
+	}
+
+	* + *:not(li){
+		margin-top: 1.33em;
+	} */
+
+	&__title{}
+
+	&__content{
+		.wp-block-heading{
+			text-transform: uppercase;
+		
+			* + &{
+				margin-block-start: 4.5rem;
+			}
+		}
+
+		> * + *{
+			margin-block-start: 1em;
+		}
+	}
+}
+
+//Mobile first: Small breakpoint imports larger breakpoints
+/*@include small {
+    @import 'small';
+}*/
+
+/* @include medium {
+    @import 'medium';
+} */
+
+/*@include large {
+    @import 'large';
+}
+@include xlarge {
+    @import 'xlarge';
+}
+@include xxlarge {
+    @import 'xxlarge';
+}*/

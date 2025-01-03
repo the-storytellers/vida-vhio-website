@@ -18,7 +18,7 @@ get_header();
 		<section class="c-section">
 			<div class="c-about c-cols" data-template="1-2">
 				<div class="col1">
-					<h2 class="c-about__title heading2">We want to train and inspire the next generation of leading cancerresearchers and medical doctors in Oncology</h2>
+					<h1 class="c-about__title heading2">We want to train and inspire the next generation of leading cancerresearchers and medical doctors in Oncology</h1>
 				</div>
 				<div class="col2">
 					<div class="c-about__block">
