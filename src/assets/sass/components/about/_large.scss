@@ -1,0 +1,29 @@
+.c-about{
+    &__title{
+	}
+
+	&__block{
+		> * + *{
+            margin-block-start: 1.125rem;
+		}
+
+		& + .c-about__block{
+		}
+	}
+	
+	&__subtitle{}
+	
+	&__content{
+		img{
+		}
+
+		> * + *{
+            margin-block-start: 1.125rem;
+		}
+	}
+
+	&__button{}
+
+	& + &{
+	}
+}

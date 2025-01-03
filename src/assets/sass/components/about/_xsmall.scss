@@ -1,0 +1,86 @@
+.c-about{
+	/* padding-block: 1.5rem;
+	border-bottom: 1px solid var(--colors-primary); */
+
+	/* &__term{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap:2em;
+		cursor: pointer;
+
+		&:after{
+			content:'+';
+			color: var(--colors-orange);
+		}
+	} */
+
+	/* &__title{
+		font-size: clamp(1rem,2.34375vw,2.8125rem);
+		line-height: 1.35em;
+	} */
+
+	/* &__description{
+		display: none;
+
+		> * + *{
+			margin-block-start: 1em;
+		}
+
+		.c-data__term + &{
+			margin-block-start: 1em;
+		}
+	} */
+
+	&__title{
+		overflow-wrap: anywhere;
+	}
+
+	&__block{
+		> * + *{
+			margin-block-start: 1.5rem;
+		}
+
+		& + .c-about__block{
+			margin-block-start: 4.5rem;
+		}
+	}
+	
+	&__subtitle{}
+	
+	&__content{
+		img{
+			width: 100%;
+		}
+
+		> * + *{
+			margin-block-start: 1.5rem;
+		}
+	}
+
+	&__button{}
+
+	& + &{
+		margin-block-start: 4.5rem;
+	}
+}
+
+//Mobile first: Small breakpoint imports larger breakpoints
+/*@include small {
+    @import 'small';
+}*/
+
+/* @include medium {
+    @import 'medium';
+} */
+
+@include large {
+    @import 'large';
+}
+
+/*@include xlarge {
+    @import 'xlarge';
+}
+@include xxlarge {
+    @import 'xxlarge';
+}*/
