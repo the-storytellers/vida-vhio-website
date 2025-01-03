@@ -78,6 +78,10 @@
 			width: 100%;
 		}
 	}
+
+	* + &{
+		margin-block-start: clamp(3rem,9.375vw,8.4375rem);
+	}
 }
 
 //Mobile first: Small breakpoint imports larger breakpoints

@@ -72,6 +72,11 @@
 			margin-block-start: 1.5rem;
 		}
 	}
+	
+	&--small{
+		height: 21.375rem;
+		color: var(--colors-white);
+	}
 }
 
 //Mobile first: Small breakpoint imports larger breakpoints

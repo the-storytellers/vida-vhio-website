@@ -1,0 +1,22 @@
+.c-data{
+	&__term{
+		/* flex-direction: row;
+        align-items: center;
+        justify-content: space-between; */
+        gap: clamp(1.875rem,3.9vw,4.6875rem);
+
+		/* .link{
+            text-wrap: nowrap;
+        } */
+	}
+
+	&__title{}
+
+	&__definition{
+		li{}
+
+		> * + *{}
+
+		.c-data__term + &{}
+	}
+}

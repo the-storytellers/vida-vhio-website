@@ -47,6 +47,11 @@ h1,h2,h3,h4,h5,h6{
 }
 ul{
     list-style-type: none;
+
+	.site-main &{
+		list-style-type: disc;
+		margin-inline-start: 1em;
+	}
 }
 /* img{display: block} */
 abbr[title]{text-decoration: none}
@@ -71,7 +76,7 @@ figure{
 	margin: 0;
 }
 strong{
-	font-weight: 600;
+	font-weight: 700;
 }
 /* Text meant only for screen readers. */
 .screen-reader-text {

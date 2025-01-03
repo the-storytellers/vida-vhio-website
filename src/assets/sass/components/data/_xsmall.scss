@@ -1,0 +1,74 @@
+.c-data{
+	padding-block: 1.5rem;
+	border-bottom: 1px solid var(--colors-primary);
+
+	&__term{
+		/* display: flex;
+		flex-direction: column;
+		gap: .625rem; */
+		/* align-items: center; */
+		/* font-size: clamp(1.25rem,2.5vw,2rem);
+		line-height: 1.25em;
+		text-transform: uppercase; */
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap:2em;
+		cursor: pointer;
+
+		&:after{
+			content:'+';
+			color: var(--colors-orange);
+		}
+
+		/* .link{
+			color: currentColor;
+		} */
+	}
+
+	/* &__title{
+		font-size: clamp(1rem,2.34375vw,2.8125rem);
+		line-height: 1.35em;
+	} */
+
+	&__description{
+		display: none;
+
+		/* li{
+			margin-left: 1em;
+			list-style-type: disc;
+			//list-style-position: inside;
+		} */
+
+		/* * + *:not(li){ */
+		> * + *{
+			/* margin-top: clamp(1rem, 1.875vw, 1.5rem); */
+			/* margin-block-start: clamp(1rem, 1.04vw, 1.25rem); */
+			margin-block-start: 1em;
+		}
+
+		.c-data__term + &{
+			/* margin-block-start: 1rem; */
+			margin-block-start: 1em;
+		}
+	}
+}
+
+//Mobile first: Small breakpoint imports larger breakpoints
+/*@include small {
+    @import 'small';
+}*/
+
+/* @include medium {
+    @import 'medium';
+} */
+
+/*@include large {
+    @import 'large';
+}
+@include xlarge {
+    @import 'xlarge';
+}
+@include xxlarge {
+    @import 'xxlarge';
+}*/

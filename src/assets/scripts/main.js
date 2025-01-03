@@ -164,17 +164,17 @@
 
     // Data
     function initData(){
-        // Toggle data definition
+        // Toggle data description
         $('.c-data:not(.c-data--alt) .c-data__term').on('click', function (event) {
             event.preventDefault();
 
-            $(this).parent().find('> .c-data__definition').slideToggle(300);
+            $(this).parent().find('> .c-data__description').slideToggle(300);
             $(this).parent().toggleClass('is-open');
         });
         /* $('.c-data:not(.c-data--project) .c-data__term').on('click', function (event) {
             event.preventDefault();
 
-            $(this).parent().find('.c-data__definition').slideToggle(300);
+            $(this).parent().find('.c-data__description').slideToggle(300);
             $(this).parent().toggleClass('is-open');
         }); */
     }
@@ -183,5 +183,5 @@
     //initMenuParentsWidth();
     initEvents();
     //initSlider();
-    //initData();
+    initData();
 })(jQuery);
