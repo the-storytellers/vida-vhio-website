@@ -39,7 +39,7 @@ $globe = wp_remote_retrieve_body($iconGlobe);
 			<a href="#" target="_blank" class="instagram"><?php echo $instagram; ?></a>
 			<a href="#" target="_blank" class="web"><?php echo $globe; ?></a>
 		</div>
-		<div class="c-footer__legal">© <?php echo date("Y"); ?> VHIO | <a href="#">Legal Text</a></div>
+		<div class="c-footer__legal">© <?php echo date("Y"); ?> VHIO | <a href="/cookies-policy">Legal Text</a></div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
