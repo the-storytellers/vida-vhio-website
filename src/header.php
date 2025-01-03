@@ -14,7 +14,7 @@ $favicon = $theme."/favicon.png";
 
 /* $logoFile = wp_remote_get($theme."/assets/images/logo-vida.svg", array('sslverify' => FALSE));
 $logo = wp_remote_retrieve_body($logoFile); */
-$logo = $theme."/assets/images/logo-vida.png";
+$logo = $theme."/assets/images/logo-vida-full.png";
 
 ?>
 <!doctype html>

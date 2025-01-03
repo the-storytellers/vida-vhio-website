@@ -1,0 +1,71 @@
+.c-footer{
+	padding-block: 1.5rem;
+	background-color: var(--colors-white);
+
+	&__content{
+		display: flex;
+		/* align-items: center; */
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	&__branding{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 3rem;
+	}
+
+	&__logo{
+		flex-shrink: 0;
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+	&__info{
+		display: flex;
+		align-items: start;
+		gap: 1.75rem;
+	}
+
+	&__rrss{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-block-start: 3.125rem;
+		gap: 3rem;
+
+		svg{
+			display: block;
+		}
+	}
+
+	&__legal{
+		margin-block-start: 3.125rem;
+		padding-block: 1rem;
+		font-size: 0.75rem;
+		line-height: 1.35em;
+		color: var(--colors-blue);
+		text-align: center;
+	}
+}
+
+
+//Mobile first: Small breakpoint imports larger breakpoints
+/*@include small {
+    @import 'small';
+}*/
+@include medium {
+    @import 'medium';
+}
+@include large {
+    @import 'large';
+}
+/* @include xlarge {
+    @import 'xlarge';
+} */
+/*@include xxlarge {
+    @import 'xxlarge';
+}*/

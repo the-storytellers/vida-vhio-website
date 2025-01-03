@@ -1,0 +1,29 @@
+.c-footer{
+	&__content{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__branding{
+		flex-basis: 50%;
+	}
+	
+	&__logo{
+		
+		img{
+		}
+	}
+	
+	&__info{
+		flex-basis: 50%;
+	}
+
+	&__rrss{
+
+		svg{
+		}
+	}
+
+	&__legal{
+	}
+}
