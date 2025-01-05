@@ -13,78 +13,80 @@
  */
 
 $theme = get_stylesheet_directory_uri();
-$heroBg = $theme."/assets/images/placeholders/home-hero-background.jpg";
+//$heroBg = $theme."/assets/images/placeholders/home-hero-background.jpg";
 $associatedPartnersLogo = $theme."/assets/images/placeholders/associated-partners-logo.png";
-$bannerBg = $theme."/assets/images/placeholders/home-banner-background.jpg";
-$bannerBgMobile = $theme."/assets/images/placeholders/home-banner-background-mobile.jpg";
-$variableSectionImage = $theme."/assets/images/placeholders/home-variable-section.jpg";
+//$bannerBg = $theme."/assets/images/placeholders/home-banner-background.jpg";
+//$bannerBgMobile = $theme."/assets/images/placeholders/home-banner-background-mobile.jpg";
+//$variableSectionImage = $theme."/assets/images/placeholders/home-variable-section.jpg";
+
+$fields = get_fields();
 
 get_header();
 ?>
 
 	<main id="primary" class="site-main layout">
 		<section class="c-hero full-width layout">
-			<?php //if($fields['hero']['image']): ?>
-			<!-- <picture class="c-hero__bg full-width">
-				<?php //if($fields['hero']['image_mobile']): ?>
-				<source srcset="<?php //echo $fields['hero']['image_mobile'] ?>" media="(max-width: 767px)" />
-				<?php //endif; ?>
-				<img src="<?php //echo $fields['hero']['image']; ?>" alt="">
-			</picture> -->
-			<?php //endif; ?>
+			<?php if($fields['hero']['background']): ?>
 			<picture class="c-hero__bg full-width">
-				<!-- <source srcset="" media="(max-width: 767px)" /> -->
-				<img src="<?php echo $heroBg; ?>" alt="">
+				<?php if($fields['hero']['background_mobile']): ?>
+				<source srcset="<?php echo $fields['hero']['background_mobile'] ?>" media="(max-width: 767px)" />
+				<?php endif; ?>
+				<img src="<?php echo $fields['hero']['background']; ?>" alt="">
 			</picture>
+			<?php endif; ?>
 
-			<!-- <div class="c-hero__inner">
-				<div class="c-hero__content">
-					<?php //if(trim($fields['hero']['caption'] ?? '')): ?>
-					<p class="c-hero__caption"><?php //echo $fields['hero']['caption']; ?></p>
-					<?php //endif; ?>
-					<?php //if(trim($fields['hero']['description'] ?? '')): ?>
-					<p class="c-hero__desc"><?php //echo $fields['hero']['description']; ?></p>
-					<?php //endif; ?>
-					<?php
-						/* if($fields['hero']['button']):
-							$heroButton = $fields['hero']['button']; */
-					?>
-					<a href="<?php //echo $heroButton['url']; ?>" target="<?php //echo $heroButton['target']; ?>" class="button c-hero__button"><?php //echo $heroButton['title']; ?></a>
-					<?php //endif; ?>
-				</div>
-			</div> -->
 			<div class="c-hero__inner">
 				<div class="c-hero__content">
-					<h2 class="c-hero__title heading1">Titular</h2>
-					<p class="c-hero__desc text1">Lorem ipsum dolor sit amet consectetur. Scelerisque tempor nibh nibh sit eleifend ut tortor id urna.</p>
+					<?php if(trim($fields['hero']['title'] ?? '')): ?>
+					<h2 class="c-hero__title heading1"><?php echo $fields['hero']['title']; ?></h2>
+					<?php endif; ?>
+					<?php if(trim($fields['hero']['description'] ?? '')): ?>
+					<div class="c-hero__desc text1"><?php echo $fields['hero']['description']; ?></div>
+					<?php endif; ?>
+					<?php if($fields['hero']['buttons']): ?>
 					<div class="c-hero__buttons">
-						<a href="#" target="_blank" class="button button--fs-constant">Application Pack</a>
-						<a href="#" target="_blank" class="button button--fs-constant">Application Pack</a>
+						<?php 
+						foreach ($fields['hero']['buttons'] as $el) : 
+							$btn = $el['button'];
+						?>
+						<a href="<?php echo $btn['url']; ?>" target="<?php echo $btn['target']; ?>" class="button button--fs-constant"><?php echo $btn['title']; ?></a>
+						<?php endforeach; ?>
 					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
 		<section class="c-section">
 			<div class="c-info c-cols" data-template="1-2">
 				<div class="col1">
-					<h2 class="c-info__title heading2 heading2--fs-constant">About us</h2>
+					<?php if(trim($fields['about']['title'] ?? '')): ?>
+					<h2 class="c-info__title heading2 heading2--fs-constant"><?php echo $fields['about']['title']; ?></h2>
+					<?php endif; ?>
 				</div>
 				<div class="col2">
-					<p class="heading3 uppercase icon-half-moon">The project</p>
-					<div class="c-info__desc text2">
-						<p>One of VHIO's main missions is to train and inspire the next generation of leading cancer researchers and medical doctors in Oncology to drive research and innovation and tackle the societal challenges of tomorrow.</p>
-						<p>Through the VHIO Academy established in 2021, the institute aims to attract young talent globally and provide state-of-the-art training and career development opportunities.</p>
-					</div>
-					<a href="#" target="_blank" class="button button--fs-constant">The project</a>
+					<?php if(trim($fields['about']['subtitle'] ?? '')): ?>
+					<p class="heading3 uppercase icon-half-moon"><?php echo $fields['about']['subtitle']; ?></p>
+					<?php endif; ?>
+					<?php if(trim($fields['about']['description'] ?? '')): ?>
+					<div class="c-info__desc text2"><?php echo $fields['about']['description']; ?></div>
+					<?php endif; ?>
+					<?php 
+					if($fields['about']['button']): 
+						$aboutButton = $fields['about']['button'];
+					?>
+					<a href="<?php echo $aboutButton['url'] ?>" target="<?php echo $aboutButton['target'] ?>" class="button button--fs-constant"><?php echo $aboutButton['title'] ?></a>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
 		<section class="c-section c-section--no-padding-top">
 			<div class="c-section__header">
-				<h2 class="c-section__title heading1">Associated Partners</h2>
-				<div class="c-section__desc text1 text1--fs-constant">
-					<p>Lorem ipsum dolor sit amet consectetur. Platea mollis ipsum dolor justo. Urna volutpat nam molestie mattis justo diam amet tortor. Malesuada ullamcorper feugiat arcu ultrices non odio.</p>
-				</div>
+				<?php if(trim($fields['partners']['title'] ?? '')): ?>
+				<h2 class="c-section__title heading1"><?php echo $fields['partners']['title'] ?></h2>
+				<?php endif; ?>
+				<?php if(trim($fields['partners']['description'] ?? '')): ?>
+				<div class="c-section__desc text1 text1--fs-constant"><?php echo $fields['partners']['description'] ?></div>
+				<?php endif; ?>
 			</div>
 			<div class="c-grid">
 				<div class="c-card">
@@ -156,49 +158,75 @@ get_header();
 			</div>
 		</section>
 		<section class="c-hero c-hero--banner full-width layout">
+			<?php if($fields['banner']['background']): ?>
 			<picture class="c-hero__bg full-width">
-				<source srcset="<?php echo $bannerBgMobile; ?>" media="(max-width: 767px)" />
-				<img src="<?php echo $bannerBg; ?>" alt="">
+				<?php if($fields['banner']['background_mobile']): ?>
+				<source srcset="<?php echo $fields['banner']['background_mobile']; ?>" media="(max-width: 767px)" />
+				<?php endif; ?>
+				<img src="<?php echo $fields['banner']['background']; ?>" alt="">
 			</picture>
+			<?php endif; ?>
 			<div class="c-hero__inner">
 				<div class="c-hero__content">
-					<h2 class="c-hero__title heading1">How to apply</h2>
-					<p class="c-hero__desc text1">Lorem ipsum dolor sit amet consectetur. Scelerisque tempor nibh nibh sit eleifend ut tortor id urna.</p>
+					<?php if(trim($fields['banner']['title'] ?? '')): ?>
+					<h2 class="c-hero__title heading1"><?php echo $fields['banner']['title']; ?></h2>
+					<?php endif; ?>
+					<?php if(trim($fields['banner']['description'] ?? '')): ?>
+					<div class="c-hero__desc text1"><?php echo $fields['banner']['description']; ?></div>
+					<?php endif; ?>
+					<?php 
+					if($fields['banner']['button']): 
+						$bannerButton = $fields['banner']['button'];
+					?>
 					<div class="c-hero__buttons">
-						<a href="#" target="_blank" class="button button--transparent button--fs-constant">Apply</a>
+						<a href="<?php echo $bannerButton['url']; ?>" target="<?php echo $bannerButton['target']; ?>" class="button button--transparent button--fs-constant"><?php echo $bannerButton['title']; ?></a>
 					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
 		<section class="c-section">
 			<div class="c-info c-cols" data-template="2-1">
 				<div class="col1">
-					<h2 class="c-info__title heading2 heading2--fs-constant uppercase">Variable section</h2>
-					<div class="c-info__desc text2">
-						<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus pellentesque consectetur.</p>
-						<p>Orci et urna tincidunt curabitur ullamcorper viverra interdum cursus. Congue blandit ultricies consequat nunc suspendisse id imperdiet.</p>
-						<p>Suscipit blandit arcu at quam nam. Praesent a ac gravida eget sed egestas eget. Ultrices dolor vel leo malesuada donec amet turpis erat.</p>
-					</div>
-					<a href="#" target="_blank" class="button button--fs-constant">Button 01</a>
+					<?php if(trim($fields['variable_section']['title'] ?? '')): ?>
+					<h2 class="c-info__title heading2 heading2--fs-constant uppercase"><?php echo $fields['variable_section']['title']; ?></h2>
+					<?php endif; ?>
+					<?php if(trim($fields['variable_section']['description'] ?? '')): ?>
+					<div class="c-info__desc text2"><?php echo $fields['variable_section']['description']; ?></div>
+					<?php endif; ?>
+					<?php
+					if($fields['variable_section']['button']): 
+						$vsButton = $fields['variable_section']['button'];
+					?>
+					<a href="<?php echo $vsButton['url']; ?>" target="<?php echo $vsButton['target']; ?>" class="button button--fs-constant"><?php echo $vsButton['title']; ?></a>
+					<?php endif; ?>
 				</div>
 				<div class="col2">
+					<?php if($fields['variable_section']['image']): ?>
 					<div class="c-info__image">
-						<img src="<?php echo $variableSectionImage; ?>" alt="">
+						<img src="<?php echo $fields['variable_section']['image']; ?>" alt="">
 					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
 		<section class="c-section c-section--big-padding-block full-width layout bg-yellow">
 			<div class="c-info c-cols" data-template="1-2">
 				<div class="col1">
-					<h2 class="c-info__title heading2 heading2--fs-constant">Contact Us</h2>
-					<a href="#" target="_blank" class="button button--transparent button--fs-constant">Contact us</a>
+					<?php if(trim($fields['contact']['title'] ?? '')): ?>
+					<h2 class="c-info__title heading2 heading2--fs-constant"><?php echo $fields['contact']['title']; ?></h2>
+					<?php endif; ?>
+					<?php
+					if($fields['contact']['button']): 
+						$contactButton = $fields['contact']['button'];
+					?>
+					<a href="<?php echo $contactButton['url']; ?>" target="<?php echo $contactButton['target']; ?>" class="button button--transparent button--fs-constant"><?php echo $contactButton['title']; ?></a>
+					<?php endif; ?>
 				</div>
 				<div class="col2">
-					<div class="c-info__desc text2">
-						<p>VHIO VIDA Management Team has created a devoted Helpdesk& Technical Support Service that will be active throughout the duration of the programme and will be accessible to interested applicants.</p>
-						<p>The Helpdesk Service will be useful during the Application and Selections Processes. Candidates are encouraged to contact the Helpdesk service via email to resolve any questions or issues regarding the selection processes.</p>
-					</div>
+					<?php if(trim($fields['contact']['description'] ?? '')): ?>
+					<div class="c-info__desc text2"><?php echo $fields['contact']['description'];?></div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>

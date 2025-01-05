@@ -43,10 +43,14 @@
 	
 	&__desc{
 		/* margin-block-start: .75rem; */
-		margin-block-start: 1.5rem;
+		/* margin-block-start: 1.5rem; */
 		//@include font('lo', medium);
 		/* font-size: clamp(1.125rem,1.82vw,2.1875rem);
 		line-height: 1.2em;		// 1.25em desktop */
+
+		* + &{
+			margin-block-start: 1.5rem;
+		}
 	}
 
 	&__buttons{
@@ -57,7 +61,11 @@
 		align-items: center;
 		gap: 1.5rem;
 		/* margin-block-start: 1.25rem;		// 3.125rem desktop */
-		margin-block-start: 3rem;
+		/* margin-block-start: 3rem; */
+
+		* + &{
+			margin-block-start: 3rem;
+		}
 	}
 	
 	&--banner{
