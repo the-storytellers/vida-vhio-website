@@ -20,7 +20,17 @@
 		flex-shrink: 0;
 
 		img{
-			max-width: 100%;
+			width: 100%;
+		}
+
+		&--vida{
+			width: 13.4375rem;
+		}
+		&--vhio{
+			width: 8.375rem;
+		}
+		&--eu{
+			width: 5.5625rem;
 		}
 	}
 
