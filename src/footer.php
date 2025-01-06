@@ -21,25 +21,56 @@ $instagram = wp_remote_retrieve_body($iconInstagram);
 $iconGlobe = wp_remote_get($theme."/assets/images/icon-globe.svg", array('sslverify' => FALSE));
 $globe = wp_remote_retrieve_body($iconGlobe);
 
+$optionFields = get_fields('options');
+$twitterURL = $optionFields['rrss_twitter_url'];
+$instagramURL = $optionFields['rrss_instagram_url'];
+$globeURL = $optionFields['rrss_globe_url'];
+
 ?>
 
 	<footer id="colophon" class="site-footer c-footer layout">
 		<div class="c-footer__content">
 			<div class="c-footer__branding">
-				<a href="#" class="c-footer__logo c-footer__logo--vida"><img src="<?php echo $logoVida; ?>" alt=""></a>
-				<a href="#" class="c-footer__logo c-footer__logo--vhio"><img src="<?php echo $logoVhio; ?>" alt=""></a>
+				<?php //var_dump($optionFields); ?>
+				<?php 
+				if($optionFields['footer_main']['link_vida']): 
+					$linkVida = $optionFields['footer_main']['link_vida'];
+				?>
+				<a href="<?php echo $linkVida['url']; ?>" target="<?php echo $linkVida['target']; ?>" class="c-footer__logo c-footer__logo--vida"><img src="<?php echo $logoVida; ?>" alt="<?php echo $linkVida['title']; ?>"></a>
+				<?php endif; ?>
+				<?php 
+				if($optionFields['footer_main']['link_vhio']): 
+					$linkVhio = $optionFields['footer_main']['link_vhio'];
+				?>
+				<a href="<?php echo $linkVhio['url']; ?>" target="<?php echo $linkVhio['target']; ?>" class="c-footer__logo c-footer__logo--vhio"><img src="<?php echo $logoVhio; ?>" alt="<?php echo $linkVhio['title']; ?>"></a>
+				<?php endif; ?>
 			</div>
-			<div class="c-footer__info">	
-				<a href="#" class="c-footer__logo c-footer__logo--eu"><img src="<?php echo $logoEU; ?>" alt=""></a>
-				<p class="text3 text3--fs-constant">This project has received funding from the European Union's Horizon Europe research andinnovation programme under the Marie Skłodowska-Curie grant agreement No 101179122</p>
+			<div class="c-footer__info">
+				<?php 
+				if($optionFields['footer_main']['link_eu']): 
+					$linkEU = $optionFields['footer_main']['link_eu'];
+				?>
+				<a href="<?php echo $linkEU['url']; ?>" target="<?php echo $linkVhio['target']; ?>" class="c-footer__logo c-footer__logo--eu"><img src="<?php echo $logoEU; ?>" alt="<?php echo $linkVhio['title']; ?>"></a>
+				<?php endif; ?>
+				<?php if(trim($optionFields['footer_main']['text'] ?? '')): ?>
+				<div class="text3 text3--fs-constant"><?php echo $optionFields['footer_main']['text']; ?></div>
+				<?php endif; ?>
 			</div>
 		</div>
 		<div class="c-footer__rrss">
-			<a href="#" target="_blank" class="twitter"><?php echo $twitter; ?></a>
-			<a href="#" target="_blank" class="instagram"><?php echo $instagram; ?></a>
-			<a href="#" target="_blank" class="web"><?php echo $globe; ?></a>
+			<?php if($twitterURL && !ctype_space($twitterURL)): ?>
+			<a href="<?php echo $twitterURL; ?>" target="_blank" class="twitter"><?php echo $twitter; ?></a>
+			<?php endif; ?>
+			<?php if($instagramURL && !ctype_space($instagramURL)): ?>
+			<a href="<?php echo $instagramURL; ?>" target="_blank" class="instagram"><?php echo $instagram; ?></a>
+			<?php endif; ?>
+			<?php if($globeURL && !ctype_space($globeURL)): ?>
+			<a href="<?php echo $globeURL; ?>" target="_blank" class="web"><?php echo $globe; ?></a>
+			<?php endif; ?>
 		</div>
-		<div class="c-footer__legal">© <?php echo date("Y"); ?> VHIO | <a href="/cookies-policy">Legal Text</a></div>
+		<?php if(trim($optionFields['footer_legal_text'] ?? '')): ?>
+		<div class="c-footer__legal">© <?php echo date("Y").' '.$optionFields['footer_legal_text']; ?></div>
+		<?php endif; ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
