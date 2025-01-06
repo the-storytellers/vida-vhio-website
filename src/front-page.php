@@ -14,7 +14,7 @@
 
 $theme = get_stylesheet_directory_uri();
 //$heroBg = $theme."/assets/images/placeholders/home-hero-background.jpg";
-$associatedPartnersLogo = $theme."/assets/images/placeholders/associated-partners-logo.png";
+//$associatedPartnersLogo = $theme."/assets/images/placeholders/associated-partners-logo.png";
 //$bannerBg = $theme."/assets/images/placeholders/home-banner-background.jpg";
 //$bannerBgMobile = $theme."/assets/images/placeholders/home-banner-background-mobile.jpg";
 //$variableSectionImage = $theme."/assets/images/placeholders/home-variable-section.jpg";
@@ -79,6 +79,22 @@ get_header();
 				</div>
 			</div>
 		</section>
+
+		<?php
+			$args = array(
+				'post_type'=>'associated-partner',
+				'post_status'=>'publish',
+				'posts_per_page'=>3,
+				'orderby'=>'rand',
+			);
+
+			// the query
+			$temp_query = $wp_query;
+			$wp_query = null;
+			$wp_query = new WP_Query($args);
+									
+			if ( $wp_query->have_posts() ) :
+		?>
 		<section class="c-section c-section--no-padding-top">
 			<div class="c-section__header">
 				<?php if(trim($fields['partners']['title'] ?? '')): ?>
@@ -89,74 +105,35 @@ get_header();
 				<?php endif; ?>
 			</div>
 			<div class="c-grid">
+				<?php
+				while ( $wp_query->have_posts() ) : $wp_query->the_post(); 
+					$apFields = get_fields();
+				?>
 				<div class="c-card">
-					<!-- <div class="c-card__image">
-						<?php 
-							//$imageId = get_post_thumbnail_id();
-							//$imageAlt = get_post_meta($imageId, '_wp_attachment_image_alt', TRUE);
-						?>
-						<img src="<?php //the_post_thumbnail_url(); ?>" alt="<?php //echo $imageAlt; ?>">
+					<?php if(trim(get_the_post_thumbnail_url() ?? '')): ?>
+					<div class="c-card__image">
+						<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php echo the_title(); ?>">
 					</div>
+					<?php endif; ?>
 					<div class="c-card__content">
 						<div class="c-card__primary">
-							<h3 class="c-card__title"><?php //echo $iFields['info']['name']; ?></h3>
-							<div class="c-card__city-country"><?php //echo $iFields['info']['city']; ?></div>
-							<div class="c-card__desc"><?php //echo $iFields['info']['desc']; ?></div>
+							<h3 class="c-card__title heading3 uppercase"><?php echo the_title(); ?></h3>
+							<?php if(trim($apFields['main']['description'] ?? '')): ?>
+							<div class="c-card__desc text2"><?php echo $apFields['main']['description']; ?></div>
+							<?php endif; ?>
 						</div>
+						<?php if(trim($apFields['main']['button_url'] ?? '')): ?>
 						<div class="c-card__secondary">
-							<a href="<?php //the_permalink(); ?>" class="button"><?php //echo get_field('read_more', 'options'); ?></a>
+							<a href="<?php echo $apFields['main']['button_url']; ?>" class="button button--fs-constant"><?php echo get_field('read_more', 'options'); ?></a>
 						</div>
-					</div> -->
-
-					<div class="c-card__image">
-						<img src="<?php echo $associatedPartnersLogo; ?>" alt="">
-					</div>
-					<div class="c-card__content">
-						<div class="c-card__primary">
-							<h3 class="c-card__title heading3 uppercase">Lorem Ipsum</h3>
-							<div class="c-card__desc text2">
-								<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus.</p>
-							</div>
-							<div class="c-card__secondary">
-								<a href="#" class="button button--fs-constant">Ver más</a>
-							</div>
-						</div>
+						<?php endif; ?>
 					</div>
 				</div>
-				<div class="c-card">
-					<div class="c-card__image">
-						<img src="<?php echo $associatedPartnersLogo; ?>" alt="">
-					</div>
-					<div class="c-card__content">
-						<div class="c-card__primary">
-							<h3 class="c-card__title heading3 uppercase">Lorem Ipsum</h3>
-							<div class="c-card__desc text2">
-								<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus.</p>
-							</div>
-							<div class="c-card__secondary">
-								<a href="#" class="button button--fs-constant">Ver más</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="c-card">
-					<div class="c-card__image">
-						<img src="<?php echo $associatedPartnersLogo; ?>" alt="">
-					</div>
-					<div class="c-card__content">
-						<div class="c-card__primary">
-							<h3 class="c-card__title heading3 uppercase">Lorem Ipsum</h3>
-							<div class="c-card__desc text2">
-								<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus.</p>
-							</div>
-							<div class="c-card__secondary">
-								<a href="#" class="button button--fs-constant">Ver más</a>
-							</div>
-						</div>
-					</div>
-				</div>
+				<?php endwhile; ?>
 			</div>
 		</section>
+		<?php endif; ?>
+
 		<section class="c-hero c-hero--banner full-width layout">
 			<?php if($fields['banner']['background']): ?>
 			<picture class="c-hero__bg full-width">
