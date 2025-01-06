@@ -8,15 +8,71 @@
  */
 
 $theme = get_stylesheet_directory_uri();
-$projectSection1 = $theme."/assets/images/placeholders/the-project-research.jpg";
-$projectSection2 = $theme."/assets/images/placeholders/the-project-cellex.jpg";
+//$projectSection1 = $theme."/assets/images/placeholders/the-project-research.jpg";
+//$projectSection2 = $theme."/assets/images/placeholders/the-project-cellex.jpg";
+
+$fields = get_fields();
 
 get_header();
 ?>
 
 	<main id="primary" class="site-main layout">
 		<section class="c-section">
-			<div class="c-about c-cols" data-template="1-2">
+			<?php 
+			if(!empty($fields['sections'])):
+				foreach ($fields['sections'] as $key=>$section):
+			?>
+				<div class="c-about c-cols" data-template="1-2">
+					<div class="col1">
+						<?php if($key === 0): ?>
+						<h1 class="c-about__title heading2"><?php echo $section['title']; ?></h1>
+						<?php else: ?>
+						<h2 class="c-about__title heading2"><?php echo $section['title']; ?></h2>
+						<?php endif; ?>
+					</div>
+					<div class="col2">
+						<?php 
+						if(!empty($section['blocks'])): 
+							foreach ($section['blocks'] as $block):
+						?>
+							<div class="c-about__block">
+								<?php 
+								if(!empty($block['block'])): 
+									foreach ($block['block'] as $row):
+										switch ($row['acf_fc_layout']):
+											case 'block_title': 
+												if(trim($row['title'] ?? '')): ?>
+												<h3 class="c-about__subtitle heading3 uppercase icon-half-moon"><?php echo $row['title']; ?></h3>
+												<?php endif;
+											break;
+											case 'block_content':
+												if(trim($row['content'] ?? '')): ?>
+												<div class="c-about__content text2"><?php echo $row['content']; ?></div>
+												<?php endif;
+											break;
+											case 'block_button':
+												if($row['button']): 
+													$rowButton = $row['button'];
+												?>
+												<a href="<?php echo $rowButton['url']; ?>" target="<?php echo $rowButton['target']; ?>" class="c-about__button button"><?php echo $rowButton['title']; ?></a>
+												<?php endif;
+											break;
+										endswitch;
+									endforeach;									
+								endif;
+								?>
+							</div>
+						<?php 
+							endforeach;
+						endif;
+						?>
+					</div>
+				</div>
+			<?php 
+				endforeach;
+			endif;
+			?>
+			<!-- <div class="c-about c-cols" data-template="1-2">
 				<div class="col1">
 					<h1 class="c-about__title heading2">We want to train and inspire the next generation of leading cancerresearchers and medical doctors in Oncology</h1>
 				</div>
@@ -28,7 +84,7 @@ get_header();
 						</div>
 						<a href="#" target="_blank" class="c-about__button button">Subscribe</a>
 						<div class="c-about__content text2">
-							<img src="<?php echo $projectSection1; ?>" alt="">
+							<img src="<?php //echo $projectSection1; ?>" alt="">
 							<p>The programme will strength the portfolio of VHIO Academy while consolidating the excellence and outstanding track-record of the beneficiary and its network of partner organisations.</p>
 						</div>
 						<a href="#" target="_blank" class="c-about__button button">Rectuitment</a>
@@ -49,11 +105,11 @@ get_header();
 					<div class="c-about__block">
 						<div class="c-about__content text2">
 							<p>One of VHIO's main missions is to train and inspire the next generation of leading cancer researchers and medical doctors in Oncologyto drive research and innovation and tacklethe societal challenges of tomorrow. Through theVHIO Academy established in 2021, the institute aims to attract young talent globally and provide state-of-the-art training and career development opportunities.To further boost VHIO leadership in cancer research by improving the training aspects and recruiting activities in order to attract the best talent at postdoctoral level, VIDA (“VHIO International post Doctoral programme for translational Research”) is a new excellent postdoctoral programme led by VHIO for therecruitment of 12 postdoctoral researchers to provide a new dimension through highly interdisciplinary and intersectoral research in the broad topic of Cancer Research while fully complying with all the principles of Open Science and maintaining the highest research quality standards. It provides the ideal setting to attract the best talent of postdoctoral researchers worldwide in the programme's research priorities. The VIDA COFUND programme also includes the participation of 16 different academic & non-academic partner organisations.</p>
-							<img src="<?php echo $projectSection2; ?>" alt="">
+							<img src="<?php //echo $projectSection2; ?>" alt="">
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</section>
 	</main><!-- #main -->
 
