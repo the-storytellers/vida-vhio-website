@@ -7,53 +7,28 @@
  * @package vida
  */
 
+$optionFields = get_fields('options');
+
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'vida' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'vida' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'vida' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$vida_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'vida' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$vida_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
+	<main id="primary" class="site-main layout">
+		<section class="c-section">
+			<div class="c-section__header">
+				<?php if(trim($optionFields['404_title'] ?? '')): ?>
+				<h1 class="c-section__title heading1 uppercase"><?php echo $optionFields['404_title']; ?></h1>
+				<?php endif; ?>
+				<?php if(trim($optionFields['404_text'] ?? '')): ?>
+				<div class="c-section__desc text1 text1--fs-constant"><?php echo $optionFields['404_text']; ?></div>
+				<?php endif; ?>
+				<?php 
+				if($optionFields['404_link']): 
+					$button = $optionFields['404_link'];
+				?>
+				<a href="<?php echo $button['url'] ?>" target="<?php echo $button['target'] ?>" class="button button--fs-constant button--404"><?php echo $button['title'] ?></a>
+				<?php endif; ?>
+			</div>
+		</section>
 	</main><!-- #main -->
 
 <?php
