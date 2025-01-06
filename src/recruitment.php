@@ -8,50 +8,79 @@
  */
 
 $theme = get_stylesheet_directory_uri();
-$heroBg = $theme."/assets/images/placeholders/recruitment-hero-background.png";
-$infoSection1 = $theme."/assets/images/placeholders/recruitment-elegibility-criteria.jpg";
-$infoSection2 = $theme."/assets/images/placeholders/recruitment-application.jpg";
-$infoSection3 = $theme."/assets/images/placeholders/recruitment-doubts.jpg";
+//$heroBg = $theme."/assets/images/placeholders/recruitment-hero-background.png";
+//$infoSection1 = $theme."/assets/images/placeholders/recruitment-elegibility-criteria.jpg";
+//$infoSection2 = $theme."/assets/images/placeholders/recruitment-application.jpg";
+//$infoSection3 = $theme."/assets/images/placeholders/recruitment-faqs.jpg";
+
+$fields = get_fields();
 
 get_header();
 ?>
 
 	<main id="primary" class="site-main layout">
 		<section class="c-hero c-hero--small full-width layout">
+			<?php if($fields['hero']['background']): ?>
 			<picture class="c-hero__bg full-width">
-				<!-- <source srcset="" media="(max-width: 767px)" /> -->
-				<img src="<?php echo $heroBg; ?>" alt="">
+				<?php if($fields['hero']['background_mobile']): ?>
+				<source srcset="<?php echo $fields['hero']['background_mobile'] ?>" media="(max-width: 767px)" />
+				<?php endif; ?>
+				<img src="<?php echo $fields['hero']['background']; ?>" alt="">
 			</picture>
+			<?php endif; ?>
 			<div class="c-hero__inner">
 				<div class="c-hero__content">
-					<h2 class="c-hero__title heading1">How to apply</h2>
-					<p class="c-hero__desc text1">Lorem ipsum dolor sit amet consectetur. Scelerisque tempor nibh nibh sit eleifend ut tortor id urna.</p>
+					<?php if(trim($fields['hero']['title'] ?? '')): ?>
+					<h1 class="c-hero__title heading1"><?php echo $fields['hero']['title']; ?></h1>
+					<?php endif; ?>
+					<?php if(trim($fields['hero']['description'] ?? '')): ?>
+					<div class="c-hero__desc text1"><?php echo $fields['hero']['description']; ?></div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
 		<section class="c-section">
 			<div class="c-info c-cols" data-template="1-2">
 				<div class="col1">
+					<?php if($fields['criteria']['image']): ?>
 					<div class="c-info__image">
-						<img src="<?php echo $infoSection1; ?>" alt="">
+						<img src="<?php echo $fields['criteria']['image']; ?>" alt="">
 					</div>
+					<?php endif; ?>
 				</div>
 				<div class="col2">
-					<h2 class="c-info__title heading2 uppercase">Elegibility criteria</h2>
-					<div class="c-info__desc text2">
-						<p>Candidates shall fulfil the following requirements at the time of the call deadline:</p>
-						<p><strong>MOBILITY RULE:</strong> "Researchers may not have resided or carried out theirmain activity (work, studies, etc.) in Spain for more than 12 months in thethree years immediately before the date of recruitment".</p>
-						<p><strong>POSTDOCTORAL RESEARCHER DEFINITION:</strong> "Researchers must be in possession of a doctoral degree at the deadline of the co-funded programme's call. Researchers who have successfully defended their doctoral thesis but who have not yet formally been awarded the doctoral degree will also be considered as postdoctoral researchers and will beconsidered eligible to apply".</p>
-						<p>Applications submitted online must include all the personal informationand details requested in the application website to be eligible. <strong>No restrictions on nationality, age and/or gender</strong> will affect the selection process</p>
-					</div>
+					<?php if(trim($fields['criteria']['title'] ?? '')): ?>
+					<h2 class="c-info__title heading2 uppercase"><?php echo $fields['criteria']['title']; ?></h2>
+					<?php endif; ?>
+					<?php if(trim($fields['criteria']['description'] ?? '')): ?>
+					<div class="c-info__desc text2"><?php echo $fields['criteria']['description']; ?></div>
+					<?php endif; ?>
 				</div>
 			</div>
 			<div class="c-info c-cols" data-template="1-2">
 				<div class="col1">
-					<h2 class="c-info__title heading2">Laboratories</h2>
+					<?php if(trim($fields['laboratories']['title'] ?? '')): ?>
+					<h2 class="c-info__title heading2"><?php echo $fields['laboratories']['title']; ?></h2>
+					<?php endif; ?>
 				</div>
 				<div class="col2">
+					<?php 
+					if(!empty($fields['laboratories']['data'])):
+						foreach ($fields['laboratories']['data'] as $data):
+					?>
 					<div class="c-data">
+						<?php if(trim($data['term'] ?? '')): ?>
+						<h3 class="c-data__term heading3"><?php echo $data['term']; ?></h3>
+						<?php endif; ?>
+						<?php if(trim($data['description'] ?? '')): ?>
+						<div class="c-data__description"><?php echo $data['description']; ?></div>
+						<?php endif; ?>
+					</div>
+					<?php
+						endforeach;
+					endif;
+					?>
+					<!-- <div class="c-data">
 						<h3 class="c-data__term heading3">Teresa Macarulla & Tian Tian</h3>
 						<div class="c-data__description">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</p>
@@ -89,41 +118,55 @@ get_header();
 					<div class="c-data">
 						<h3 class="c-data__term heading3">Raquel Pérez López</h3>
 						<div class="c-data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="c-info c-cols" data-template="1-2">
 				<div class="col1">
+					<?php if($fields['application']['image']): ?>
 					<div class="c-info__image">
-						<img src="<?php echo $infoSection2; ?>" alt="">
+						<img src="<?php echo $fields['application']['image']; ?>" alt="">
 					</div>
+					<?php endif; ?>
 				</div>
 				<div class="col2">
-					<h2 class="c-info__title heading2 uppercase">Application</h2>
+					<?php if(trim($fields['application']['title'] ?? '')): ?>
+					<h2 class="c-info__title heading2 uppercase"><?php echo $fields['application']['title'] ?></h2>
+					<?php endif; ?>
+					<?php if(trim($fields['application']['description'] ?? '')): ?>
 					<div class="c-info__desc text2">
-						<p>Applications will be submitted online through LINK., the official platform for VHIO VIDA programme.</p>
-						<ul>
-							<li>Orci et urna tincidunt curabitur ullamcorper viverra interdum cursus. Congue blandit ultricies consequat nunc suspendisse id imperdiet.</li>
-							<li>Suscipit blandit arcu at quam nam. Praesent a ac gravida eget sed egestas eget. Ultrices dolor vel leo malesuada donec amet turpis erat.</li>
-						</ul>
+						<?php echo $fields['application']['description'] ?>
 					</div>
-					<a href="#" download class="button">Descargar la guía</a>
+					<?php endif; ?>
+					<?php 
+					if($fields['application']['button']): 
+						$applicationButton = $fields['application']['button'];
+					?>
+					<a href="<?php echo $applicationButton['url'] ?>" target="<?php echo $applicationButton['target'] ?>" class="button"><?php echo $applicationButton['title'] ?></a>
+					<?php endif; ?>
 				</div>
 			</div>
 			<div class="c-info c-cols" data-template="2-1">
 				<div class="col1">
-					<h2 class="c-info__title heading2 uppercase">Any more doubts?</h2>
-					<div class="c-info__desc text2">
-						<p>Lorem ipsum dolor sit amet consectetur. Tellus pharetra molestie in nulla tincidunt cursus tellus. Tellus fringilla duis lobortis sit feugiat risus pellentesque consectetur.</p>
-						<p>Orci et urna tincidunt curabitur ullamcorper viverra interdum cursus. Congue blandit ultricies consequat nunc suspendisse id imperdiet.</p>
-						<p>Suscipit blandit arcu at quam nam. Praesent a ac gravida eget sed egestas eget. Ultrices dolor vel leo malesuada donec amet turpis erat.</p>
-					</div>
-					<a href="#" download class="button">Descarga las preguntas frecuentes</a>
+					<?php if(trim($fields['faqs']['title'] ?? '')): ?>
+					<h2 class="c-info__title heading2 uppercase"><?php echo $fields['faqs']['title']; ?></h2>
+					<?php endif; ?>
+					<?php if(trim($fields['faqs']['description'] ?? '')): ?>
+					<div class="c-info__desc text2"><?php echo $fields['faqs']['description']; ?></div>
+					<?php endif; ?>
+					<?php 
+					if($fields['faqs']['button']): 
+						$faqsButton = $fields['faqs']['button'];
+					?>
+					<a href="<?php echo $faqsButton['url'] ?>" target="<?php echo $faqsButton['target'] ?>" class="button"><?php echo $faqsButton['title'] ?></a>
+					<?php endif; ?>
 				</div>
 				<div class="col2">
+					<?php if($fields['faqs']['image']): ?>
 					<div class="c-info__image">
-						<img src="<?php echo $infoSection3; ?>" alt="">
+						<img src="<?php echo $fields['faqs']['image']; ?>" alt="">
 					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
