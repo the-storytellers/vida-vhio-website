@@ -8,39 +8,51 @@
  */
 
 $theme = get_stylesheet_directory_uri();
-$heroBg = $theme."/assets/images/placeholders/helpdesk-hero-background.jpg";
+//$heroBg = $theme."/assets/images/placeholders/helpdesk-hero-background.jpg";
+
+$fields = get_fields();
 
 get_header();
 ?>
 
 	<main id="primary" class="site-main layout">
 		<section class="c-hero full-width layout">
+			<?php if($fields['hero']['background']): ?>
 			<picture class="c-hero__bg full-width">
-				<!-- <source srcset="" media="(max-width: 767px)" /> -->
-				<img src="<?php echo $heroBg; ?>" alt="">
+				<?php if($fields['hero']['background_mobile']): ?>
+				<source srcset="<?php echo $fields['hero']['background_mobile']; ?>" media="(max-width: 767px)" />
+				<?php endif; ?>
+				<img src="<?php echo $fields['hero']['background']; ?>" alt="">
 			</picture>
+			<?php endif; ?>
 			<div class="c-hero__inner">
 				<div class="c-hero__content">
-					<h2 class="c-hero__title heading1 uppercase">Helpdesk Service</h2>
+					<?php if(trim($fields['hero']['title'] ?? '')): ?>
+					<h1 class="c-hero__title heading1 uppercase"><?php echo $fields['hero']['title']; ?></h1>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
 		<section class="c-section">
 			<div class="c-info c-cols" data-template="1-2">
 				<div class="col1">
-					<h2 class="c-info__title heading2">Contact Us</h2>
-					<div class="c-info__desc text3">
-						<p><strong>Phone:</strong> 34 932 543 450 (Ext: 8816)</p>
-						<p><strong>Imma Falero</strong><br />Director at VHIO Academy</p>
-						<p><strong>Maria Yubero</strong><br />Training Coordinator at VHIO Academy</p>
-						<p>Vall Hebron Institute of Oncology (VHIO)<br />Plaça Adolf Marsillach,<br />608035 Barcelona (Spain)</p>
-					</div>
-					<a href="#" target="_blank" class="button">Contact us</a>
+					<?php if(trim($fields['contact']['title'] ?? '')): ?>
+					<h2 class="c-info__title heading2"><?php echo $fields['contact']['title']; ?></h2>
+					<?php endif; ?>
+					<?php if(trim($fields['contact']['info'] ?? '')): ?>
+					<div class="c-info__desc text3"><?php echo $fields['contact']['info']; ?></div>
+					<?php endif; ?>
+					<?php 
+					if($fields['contact']['button']): 
+						$button = $fields['contact']['button'];
+					?>
+					<a href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>" class="button"><?php echo $button['title']; ?></a>
+					<?php endif; ?>
 				</div>
 				<div class="col2">
-					<div class="text3">
-						<p>VHIO VIDA Management Team has created a devoted Helpdesk& Technical Support Service that will be active throughout the duration of the programme and will be accessible to interested applicants. The Helpdesk Service will be useful during the Application and Selections Processes. Candidates are encouraged to contact the Helpdesk service via email to resolve any questions or issues regarding the selection processes.</p>
-					</div>
+					<?php if(trim($fields['contact']['description'] ?? '')): ?>
+					<div class="text3"><?php echo $fields['contact']['description']; ?></div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
