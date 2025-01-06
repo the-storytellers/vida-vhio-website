@@ -10,16 +10,20 @@
 $theme = get_stylesheet_directory_uri();
 $associatedPartnersLogo = $theme."/assets/images/placeholders/associated-partners-logo.png";
 
+$fields = get_fields();
+
 get_header();
 ?>
 
 	<main id="primary" class="site-main layout">
 		<section class="c-section">
 			<div class="c-section__header">
-				<h1 class="c-section__title heading1">Associated Partners</h1>
-				<div class="c-section__desc text1 text1--fs-constant">
-					<p>Lorem ipsum dolor sit amet consectetur. Platea mollis ipsum dolor justo. Urna volutpat nam molestie mattis justo diam amet tortor. Malesuada ullamcorper feugiat arcu ultrices non odio.</p>
-				</div>
+				<?php if(trim($fields['main']['title'] ?? '')): ?>
+				<h1 class="c-section__title heading1"><?php echo $fields['main']['title']; ?></h1>
+				<?php endif; ?>
+				<?php if(trim($fields['main']['description'] ?? '')): ?>
+				<div class="c-section__desc text1 text1--fs-constant"><?php echo $fields['main']['description']; ?></div>
+				<?php endif; ?>
 			</div>
 			<div class="c-grid">
 				<div class="c-card">
