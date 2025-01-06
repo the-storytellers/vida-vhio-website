@@ -31,9 +31,7 @@ get_header();
 					'post_type'=>'associated-partner',
 					'post_status'=>'publish',
 					'posts_per_page'=>-1,
-					/* 'order'=>'DESC' */
-					/* 'orderby'=>'menu_order', */
-					'order'=>'ASC',
+					'orderby'=>'menu_order',
 				);
 
 				// the query
