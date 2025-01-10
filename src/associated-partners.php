@@ -61,7 +61,7 @@ get_header();
 						</div>
 						<?php if(trim($apFields['main']['button_url'] ?? '')): ?>
 						<div class="c-card__secondary">
-							<a href="<?php echo $apFields['main']['button_url']; ?>" class="button button--fs-constant"><?php echo get_field('read_more', 'options'); ?></a>
+							<a href="<?php echo $apFields['main']['button_url']; ?>" target="_blank" class="button button--fs-constant"><?php echo get_field('read_more', 'options'); ?></a>
 						</div>
 						<?php endif; ?>
 					</div>

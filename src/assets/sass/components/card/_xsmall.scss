@@ -35,15 +35,19 @@
 		/* font-size: clamp(.75rem, 1.40625vw, 1.125rem);
 		line-height: 1.56em; */
 	}
+
+	& + &{
+		border-block-start: none;
+	}
 }
 
 //Mobile first: Small breakpoint imports larger breakpoints
 /*@include small {
     @import 'small';
 }*/
-/* @include medium {
+@include medium {
     @import 'medium';
-} */
+}
 /*@include large {
     @import 'large';
 }
