@@ -1,225 +1,30 @@
 .c-card{
+
 	&__image{
 		img{
-			max-height: 10.25rem;
 		}
 	}
 
-	&__content{}
+	&__content{
+	}
 
 	&__primary{}
 
-	&__secondary{}
-
-	&__caption,
-	&__reference{}
-
-	&__title{}
-
-	&__location,
-	&__host{}
-
-	&__city-country{}
-
-	&__desc{}
-
-	&__job{}
-	
-	&__info{
-		* + *{}
+	&__secondary{
 	}
 
-	&__subtitle{}
-
-	&__author{}
-
-	&__link{}
-
-	&__phd{
-		span{}
-		
-		&:before{}
-		
-		&:after{}
-	}
-
-	&__rrss{}
-	
-	&--position{
-        .c-card__content{}
-
-		.c-card__reference{}
-
-		.c-card__title{}
-
-		.c-card__phd{}
-
-		/* .c-card__phd{
-			span{}
-
-			&:before{}
-			
-			&:after{}
-		} */
-
-		.c-card__city-country{}
-
-		&:hover{}
-	}
-
-	&--company{
-		.c-card__image{
-			img{}
-		}
-
-		.c-card__content{}
-
-		.c-card__title,
-		.c-card__city-country,
-		.button{}
-		
-		.c-card__city-country{}
-	}
-
-	&--non-academic-company{
-		.c-card__image{}
-	}
-
-	&--profile{
-		.c-card__image{			
-			img{
-				/* max-height: 12.375rem; */
-			}
-		}
-		
-		.c-card__content{}
-
-		.c-card__title{}
-
-		/* .c-card__phd{} */
-
-		.c-card__city-country{}
-
-		.c-card__link{}
-
-		* + .c-card__phd,
-		* + .c-card__rrss{}
-	}
-
-	&--partner-profile{
-		.c-card__image{}
-	}
-
-	&--people{
-		.c-card__image{
-			img{}
-		}
-		.c-card__content{}
-
-		.c-card__job,
-		.c-card__location{}
-	}
-
-	&--about--profile{}
-	
-	&--contact-profile{
-		.c-card__subtitle,
-		.button,
-		.c-card__info{}
-
-		.button{
-			min-width: 9.75rem;
-		}
-	}
-
-	&--post{
-		.c-card__image{
-			.c-card__caption + img{}
-		}
-		
-		.c-card__content{
-			min-height: 15.625rem;
-		}
-
-		.c-card__caption{}
-
-		.c-card__primary{
-			.c-card__caption{}
-		}
-		
-		.c-card__title{}
-
-		.c-card__author{}
-		
-		.c-card__desc{}
-		
-		.c-card__secondary{}
-
+	&__desc{
 	}
 	
-	&--news{
-		&:nth-of-type(1){
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			width: 100%;
-			padding: clamp(1.5rem, 2.8125vw, 2.25rem) clamp(1.5rem, 3.125vw, 2.5rem);
-	
-			.c-card__image{
-				width: 58%;
-				padding: 0;
-	
-				img{
-					height: 100%;
-					max-height: none;
-					object-fit: cover;
-					object-position: center;
-				}
-	
-				.c-card__caption{
-					display: none;
-	
-					& + img{
-						margin-top: 0;
-					}
-				}
-			}
-	
-			.c-card__content{
-				width: 38.94%;
-				min-height: clamp(18rem, 28.75vw, 23rem);
-				padding: 0;
-			}
-	
-			.c-card__primary{
-				.c-card__caption{
-					display: block;
-					font-size: clamp(.75rem, 1.40625vw, 1.125rem);
-					line-height: 1.39em;
-				}
-			}
-	
-			.c-card__title{
-				margin-top: min(.375em, .75rem);
-				font-size: clamp(1.25rem,2.5vw,2rem);
-				line-height: 1.25em;
-				text-transform: uppercase;
-			}
-	
-			.c-card__desc{
-				margin-top: min(1.56em, 1.75rem);
-				font-size: clamp(.75rem, 1.40625vw, 1.125rem);
-				line-height: 1.56em;
-			}
-			
-			.c-card__secondary{
-				margin-top: var(--card-secondary-margin-top);
-			}
-		}
-
+	& + &{
+		border-inline-start: none;
 	}
 
-	&.blue{}
-	&.orange{}
-	&.yellow{}
+	&:nth-of-type(-n+3){
+		border-block-start: 1px solid currentColor;
+	}
+	
+	&:nth-of-type(3n+1){
+		border-inline-start: 1px solid currentColor;
+	}
 }
