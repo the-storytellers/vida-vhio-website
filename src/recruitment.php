@@ -8,10 +8,6 @@
  */
 
 $theme = get_stylesheet_directory_uri();
-//$heroBg = $theme."/assets/images/placeholders/recruitment-hero-background.png";
-//$infoSection1 = $theme."/assets/images/placeholders/recruitment-elegibility-criteria.jpg";
-//$infoSection2 = $theme."/assets/images/placeholders/recruitment-application.jpg";
-//$infoSection3 = $theme."/assets/images/placeholders/recruitment-faqs.jpg";
 
 $fields = get_fields();
 
@@ -73,52 +69,21 @@ get_header();
 						<h3 class="c-data__term heading3"><?php echo $data['term']; ?></h3>
 						<?php endif; ?>
 						<?php if(trim($data['description'] ?? '')): ?>
-						<div class="c-data__description"><?php echo $data['description']; ?></div>
+						<div class="c-data__description">
+							<?php 
+							echo $data['description'];
+							
+							if(trim($data['button_url'] ?? '')): 
+							?>
+							<a href="<?php echo $data['button_url']; ?>" target="_blank" class="button"><?php echo get_field('read_more', 'options'); ?></a>
+							<?php endif; ?>
+						</div>
 						<?php endif; ?>
 					</div>
 					<?php
 						endforeach;
 					endif;
 					?>
-					<!-- <div class="c-data">
-						<h3 class="c-data__term heading3">Teresa Macarulla & Tian Tian</h3>
-						<div class="c-data__description">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</p>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</p>
-						</div>
-					</div>
-					<div class="c-data">
-						<h3 class="c-data__term heading3">Fran Martínez</h3>
-						<div class="c-data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</div>
-					</div>
-					<div class="c-data">
-						<h3 class="c-data__term heading3">Joan Seoane</h3>
-						<div class="c-data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</div>
-					</div>
-					<div class="c-data">
-						<h3 class="c-data__term heading3">Alena Gros</h3>
-						<div class="c-data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</div>
-					</div>
-					<div class="c-data">
-						<h3 class="c-data__term heading3">Ana Vivancos</h3>
-						<div class="c-data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</div>
-					</div>
-					<div class="c-data">
-						<h3 class="c-data__term heading3">Francisco Barriga</h3>
-						<div class="c-data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</div>
-					</div>
-					<div class="c-data">
-						<h3 class="c-data__term heading3">Joaquin Mateo</h3>
-						<div class="c-data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</div>
-					</div>
-					<div class="c-data">
-						<h3 class="c-data__term heading3">Marcos Malumbres</h3>
-						<div class="c-data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</div>
-					</div>
-					<div class="c-data">
-						<h3 class="c-data__term heading3">Raquel Pérez López</h3>
-						<div class="c-data__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, molestias totam temporibus cupiditate sed saepe dolor perferendis harum repudiandae.</div>
-					</div> -->
 				</div>
 			</div>
 			<div class="c-info c-cols" data-template="1-2">
