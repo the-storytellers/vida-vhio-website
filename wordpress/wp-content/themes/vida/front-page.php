@@ -95,7 +95,7 @@ get_header();
 									
 			if ( $wp_query->have_posts() ) :
 		?>
-		<section class="c-section c-section--no-padding-top">
+		<section class="c-section c-section--no-padding-top" style="display:none;">
 			<div class="c-section__header">
 				<?php if(trim($fields['partners']['title'] ?? '')): ?>
 				<h2 class="c-section__title heading1"><?php echo $fields['partners']['title'] ?></h2>
