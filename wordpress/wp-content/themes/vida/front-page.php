@@ -25,7 +25,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main layout">
-		<section class="c-hero full-width layout">
+		<section class="c-hero c-hero--fluid-height full-width layout">
 			<?php if($fields['hero']['background']): ?>
 			<picture class="c-hero__bg full-width">
 				<?php if($fields['hero']['background_mobile']): ?>

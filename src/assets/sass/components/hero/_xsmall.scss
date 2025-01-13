@@ -85,6 +85,11 @@
 		height: 21.375rem;
 		color: var(--colors-white);
 	}
+
+	&--fluid-height{
+		height: auto;
+		min-height: var(--hero-height);
+	}
 }
 
 //Mobile first: Small breakpoint imports larger breakpoints
