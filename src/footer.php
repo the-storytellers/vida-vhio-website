@@ -11,7 +11,6 @@
 
 $theme = get_stylesheet_directory_uri();
 $logoVida = $theme."/assets/images/logo-vida.png";
-/* $logoVhio = $theme."/assets/images/logo-vhio.jpg"; */
 $logoVhio = $theme."/assets/images/logo-vhio.png";
 $logoEU = $theme."/assets/images/logo-eu.png";
 
@@ -32,7 +31,6 @@ $globeURL = $optionFields['rrss_globe_url'];
 	<footer id="colophon" class="site-footer c-footer layout">
 		<div class="c-footer__content">
 			<div class="c-footer__branding">
-				<?php //var_dump($optionFields); ?>
 				<?php 
 				if($optionFields['footer_main']['link_vida']): 
 					$linkVida = $optionFields['footer_main']['link_vida'];
