@@ -54,6 +54,14 @@
 	&__title{}
 
 	&__desc{
+		a{
+			text-decoration: underline;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
 		> * + *{
 			margin-block-start: 1em;
 		}
