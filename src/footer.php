@@ -11,7 +11,8 @@
 
 $theme = get_stylesheet_directory_uri();
 $logoVida = $theme."/assets/images/logo-vida.png";
-$logoVhio = $theme."/assets/images/logo-vhio.jpg";
+/* $logoVhio = $theme."/assets/images/logo-vhio.jpg"; */
+$logoVhio = $theme."/assets/images/logo-vhio.png";
 $logoEU = $theme."/assets/images/logo-eu.png";
 
 $iconTwitter = wp_remote_get($theme."/assets/images/icon-twitter.svg", array('sslverify' => FALSE));
