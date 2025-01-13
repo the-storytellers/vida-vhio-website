@@ -15,4 +15,8 @@
     &--footer{
         gap: var(--grid-gap);
     } */
+
+    &--guides{
+        grid-template-columns: 1fr 1fr;
+    }
 }

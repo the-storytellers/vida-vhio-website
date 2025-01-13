@@ -25,6 +25,10 @@
         row-gap: 2.8125rem;
     } */
 
+    &--guides{
+        gap: var(--grid-gap-guides);
+    }
+
     * + &{
         margin-top: 4.5rem;
     }

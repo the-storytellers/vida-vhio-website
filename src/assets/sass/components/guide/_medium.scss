@@ -1,0 +1,29 @@
+.c-info{	
+	&__content{
+		display: flex;
+        justify-content: space-between;
+	}
+
+	&__title{
+        width: 49.57%;
+	}
+	
+	&__description{
+        width: 46.61%;
+		margin-top: 0;
+
+		.button{}
+	}
+
+	&__text{		
+		> p:nth-child(1){}
+
+		* + *{
+			margin-top: 1rem;
+		}
+	}
+	
+	&--alt{
+		&__title{}
+	}
+}
