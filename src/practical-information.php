@@ -68,7 +68,13 @@ get_header();
 				</div>
 			</div>
 		</section>
-		<section class="c-hero full-width layout">
+		<?php 
+		$heroSupportId = "";
+		if(trim($fields['hero_support']['id'] ?? '')):
+			$heroSupportId = $fields['hero_support']['id'];
+		endif;
+		?>
+		<section id="<?php echo $heroSupportId; ?>" class="c-hero full-width layout">
 			<?php if($fields['hero_support']['background']): ?>
 			<picture class="c-hero__bg full-width">
 				<?php if($fields['hero_support']['background_mobile']): ?>
@@ -121,7 +127,13 @@ get_header();
 				</div>
 			</div>
 		</section>
-		<section class="c-hero full-width layout">
+		<?php 
+		$heroGuidesId = "";
+		if(trim($fields['hero_guides']['id'] ?? '')):
+			$heroGuidesId = $fields['hero_guides']['id'];
+		endif;
+		?>
+		<section id="<?php echo $heroGuidesId; ?>" class="c-hero full-width layout">
 			<?php if($fields['hero_guides']['background']): ?>
 			<picture class="c-hero__bg full-width">
 				<?php if($fields['hero_guides']['background_mobile']): ?>
