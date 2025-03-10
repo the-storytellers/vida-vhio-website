@@ -18,7 +18,7 @@
 	&__content{
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		/* justify-content: space-between; */
 		min-height: var(--card-min-height);
 		padding: var(--card-content-padding-top) var(--card-padding-x) var(--card-padding-y);
 		text-align: left;
