@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WP Migrate Lite &#8211; WordPress Migration Made Easy - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-07-07 07:32:27+0000\n"
+"PO-Revision-Date: 2025-02-11 18:42:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -46,7 +46,7 @@ msgid "Multisite Tools upgrade"
 msgstr "Actualizar las herramientas multisitio"
 
 #: class/Free/Plugin/PluginManager.php:160
-#: frontend/build-free/static/js/main.3b70e17c6234.js:1
+#: frontend/build-free/static/js/main.e1f2bdd80e44.js:1
 msgid "Support"
 msgstr "Ayuda"
 
@@ -55,14 +55,14 @@ msgid "Themes & Plugins"
 msgstr "Temas y plugins"
 
 #: class/Common/TPF/ThemePluginFilesAddon.php:173
-#: frontend/build-free/static/js/537.8c9507b1c32b.chunk.js:1
-#: frontend/build-free/static/js/main.3b70e17c6234.js:1
+#: frontend/build-free/static/js/85.8a8af69d7986.chunk.js:1
+#: frontend/build-free/static/js/main.e1f2bdd80e44.js:1
 msgid "Plugins"
 msgstr "Plugins"
 
 #: class/Common/TPF/ThemePluginFilesAddon.php:172
-#: frontend/build-free/static/js/537.8c9507b1c32b.chunk.js:1
-#: frontend/build-free/static/js/main.3b70e17c6234.js:1
+#: frontend/build-free/static/js/85.8a8af69d7986.chunk.js:1
+#: frontend/build-free/static/js/main.e1f2bdd80e44.js:1
 msgid "Themes"
 msgstr "Temas"
 
@@ -89,7 +89,7 @@ msgid "WP Migrate Lite"
 msgstr "WP Migrate Lite"
 
 #: class/Free/Plugin/PluginManager.php:51
-#: frontend/build-free/static/js/main.3b70e17c6234.js:1
+#: frontend/build-free/static/js/main.e1f2bdd80e44.js:1
 msgid "Migrate"
 msgstr "Migrar"
 
@@ -205,8 +205,8 @@ msgid "Sanitization Error: `%1$s` method was expecting %2$s for the `%3$s` field
 msgstr "Error de saneado: el método `%1$s` esperaba %2$s para el campo `%3$s`, pero ha obtenido algo más: «%4$s»"
 
 #: class/Free/Plugin/PluginManager.php:55
-#: frontend/build-free/static/js/613.1f032ee72087.chunk.js:1
-#: frontend/build-free/static/js/main.3b70e17c6234.js:1
+#: frontend/build-free/static/js/481.adbbff83ff0c.chunk.js:1
+#: frontend/build-free/static/js/main.e1f2bdd80e44.js:1
 msgid "Upgrade"
 msgstr "Actualizar"
 
@@ -254,11 +254,11 @@ msgstr "Por favor selecciona un archivo de exportación SQL arriba para continua
 msgid "The selected file does not have a recognized file type. Please upload a valid SQL file to continue."
 msgstr "El archivo seleccionado no tiene un tipo de archivo reconocido. Carga un archivo SQL válido para continuar."
 
-#: class/Common/Sql/Table.php:1154
+#: class/Common/Sql/Table.php:1178
 msgid "The table `%1s` contains characters which are invalid in the target database. See&nbsp;<a href=\"%2s\" target=\"_blank\">our documentation</a> for more information."
 msgstr "La tabla `%1s` contiene caracteres que no son válidos en la base de datos objetivo. Mira&nbsp;<a href=\"%2s\" target=\"_blank\">nuestra documentación</a> para más información."
 
-#: class/Common/Sql/Table.php:1151
+#: class/Common/Sql/Table.php:1175
 msgid "The imported table `%1s` contains characters which are invalid in the target schema.<br><br>If this is a WP Migrate export file, ensure that the `Compatible with older versions of MySQL` setting under `Advanced Options` is unchecked and try exporting again.<br><br> See&nbsp;<a href=\"%2s\">our documentation</a> for more information."
 msgstr "La tabla importada `%1s` contiene caracteres no válidos en el esquema de destino.<br><br>Si es un archivo de exportación de WP Migrate, asegúrate de que el ajuste «Compatible con versiones anteriores de MySQL» que se encuentra en «Opciones avanzadas» está desmarcada y prueba a exportar de nuevo.<br><br>Mira&nbsp;<a href=\"%2s\">nuestra documentación</a> para más información."
 
@@ -298,7 +298,7 @@ msgstr "WPDM Error: Los datos no pueden ser deserializados. %s"
 msgid "%1$s only runs at the Network Admin level. As there is no Tools menu in the Network Admin, the %2$s menu item is located under Settings."
 msgstr "%1$s sólo funciona en el nivel de administrador la red. Ya que no hay ningún menú de herramientas en el administrador de la red, el elemento de menú %2$s está situado en Ajustes."
 
-#: class/Common/Sql/Table.php:817
+#: class/Common/Sql/Table.php:841
 msgid "Error creating temporary table. Table \"%s\" does not exist."
 msgstr "Error creando una tabla temporal. La tabla \"%s\" no existe."
 
@@ -357,8 +357,8 @@ msgstr "Perfil no encontrado o o no fue posible generarlo partir de los parámet
 
 #. Plugin URI of the plugin
 #: wp-migrate-db.php
-msgid "https://wordpress.org/plugins/wp-migrate-db/"
-msgstr "https://wordpress.org/plugins/wp-migrate-db/"
+msgid "https://deliciousbrains.com/"
+msgstr "https://deliciousbrains.com/"
 
 #: template/options.php:12
 msgid "<strong>PHP Function Disabled</strong> &mdash; The <code>set_time_limit()</code> function is currently disabled on your server. We use this function to ensure that the migration doesn't time out. We haven't disabled the plugin however, so you're free to cross your fingers and hope for the best. You may want to contact your web host to enable this function."
@@ -373,7 +373,7 @@ msgid "You can read more about this in <a href=\"%s\">our documentation</a>, pro
 msgstr "Puedes leer más sobre esto en <a href=\"%s\">nuestra documentación</a>, procede con cuidado."
 
 #: class/Common/UI/TemplateBase.php:245
-#: frontend/build-free/static/js/main.3b70e17c6234.js:1
+#: frontend/build-free/static/js/main.e1f2bdd80e44.js:1
 msgid "As a result, uppercase characters in table names will be converted to lowercase during the migration."
 msgstr "Como resultado, los caracteres en mayúsculas en los nombres de tabla se convertirán en minúsculas durante la migración."
 
@@ -438,51 +438,51 @@ msgstr "La URL de la primera línea parece no ser válida, por favor compruébal
 msgid "The connection information appears to be missing, please enter it to continue."
 msgstr "La información de conexión parece faltar, por favor escríbela para continuar."
 
-#: class/Common/Sql/Table.php:1079
+#: class/Common/Sql/Table.php:1103
 msgid "Failed to write the SQL data to the file. (#128)"
 msgstr "Error al escribir los datos SQL en el archivo. (#128)"
 
-#: class/Common/Sql/Table.php:1072
+#: class/Common/Sql/Table.php:1096
 msgid "Failed to write the gzipped SQL data to the file. (#127)"
 msgstr "Error al escribir los datos SQL comprimidos (gzipped) en el archivo. (#127)"
 
-#: class/Common/Sql/Table.php:1935
+#: class/Common/Sql/Table.php:1972
 msgid "Database: %s"
 msgstr "Base de datos: %s"
 
-#: class/Common/Sql/Table.php:1934
+#: class/Common/Sql/Table.php:1971
 msgid "Hostname: %s"
 msgstr "Hostname: %s"
 
-#: class/Common/Sql/Table.php:1933
+#: class/Common/Sql/Table.php:1970
 msgid "Generated: %s"
 msgstr "Generado: %s"
 
-#: class/Common/Sql/Table.php:1931
+#: class/Common/Sql/Table.php:1968
 msgid "WordPress MySQL database migration"
 msgstr "Migración de la base de datos MySQL de WordPress"
 
-#: class/Common/Sql/Table.php:1806
+#: class/Common/Sql/Table.php:1843
 msgid "End of data contents of table %s"
 msgstr "Fin de los contenidos de datos de la tabla %s"
 
-#: class/Common/Sql/Table.php:945
+#: class/Common/Sql/Table.php:969
 msgid "Data contents of table %s"
 msgstr "Contenido de la tabla %s"
 
-#: class/Common/Sql/Table.php:887
+#: class/Common/Sql/Table.php:911
 msgid "Failed to generate the create table query, please ensure your database is online. (#126)"
 msgstr "Falló la generación de la consulta de crear tabla, asegúrate de que tu base de datos está online. (#126)"
 
-#: class/Common/Sql/Table.php:879
+#: class/Common/Sql/Table.php:903
 msgid "Table structure of table %s"
 msgstr "Estructura de la tabla de la tabla %s"
 
-#: class/Common/Sql/Table.php:868
+#: class/Common/Sql/Table.php:892
 msgid "Delete any existing table %s"
 msgstr "Eliminar cualquier tabla existente %s"
 
-#: class/Common/Sql/Table.php:744
+#: class/Common/Sql/Table.php:746
 msgid "Failed to retrieve table structure for table '%s', please ensure your database is online. (#125)"
 msgstr "Ha fallado la recuperación de la estructura de la tabla «%s», por favor, asegúrate de que tu base de datos está online. (#125)"
 
