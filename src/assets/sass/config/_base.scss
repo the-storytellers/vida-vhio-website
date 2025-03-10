@@ -161,6 +161,10 @@ strong{
 }
 .heading1{
 	font-size: clamp(3rem,4.72vw,4.25rem);
+
+	&--small{
+		font-size: clamp(2.375rem,3.75vw,3.375rem);
+	}
 }
 .heading2{
 	font-size: clamp(2.25rem,3.33vw,3rem);

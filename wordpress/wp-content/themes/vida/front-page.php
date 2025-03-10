@@ -38,7 +38,7 @@ get_header();
 			<div class="c-hero__inner">
 				<div class="c-hero__content">
 					<?php if(trim($fields['hero']['title'] ?? '')): ?>
-					<h2 class="c-hero__title heading1"><?php echo $fields['hero']['title']; ?></h2>
+					<h2 class="c-hero__title heading1 heading1--small"><?php echo $fields['hero']['title']; ?></h2>
 					<?php endif; ?>
 					<?php if(trim($fields['hero']['description'] ?? '')): ?>
 					<div class="c-hero__desc text1"><?php echo $fields['hero']['description']; ?></div>
