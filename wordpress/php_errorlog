@@ -1,72 +1,56 @@
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 19
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 19
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 38
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 38
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 63
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 63
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 72
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 72
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 91
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 91
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 116
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 116
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 125
-[13-Jan-2025 13:01:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/practical-information.php on line 125
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 19
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 19
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 41
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 41
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 91
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 91
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 107
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 107
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 123
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 123
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 130
-[14-Jan-2025 08:32:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 130
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 29
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 29
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 46
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 46
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 74
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 74
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 138
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 138
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 155
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 155
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 175
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 175
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 182
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 182
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 197
-[14-Jan-2025 08:52:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 197
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 29
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 29
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 46
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 46
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 74
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 74
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 138
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 138
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 155
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 155
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 175
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 175
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 182
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 182
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 197
-[14-Jan-2025 09:02:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 197
-[25-Jan-2025 09:52:40 UTC] Error de evento de reprogramación de cron para el gancho: wordfence_ls_ntp_cron. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
-[03-Feb-2025 23:23:09 UTC] Error de evento de anulación de programación de cron para el gancho: wordfence_start_scheduled_scan. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":false,"args":[1738620600]}
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 19
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 19
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 41
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 41
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 91
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 91
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 107
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 107
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 123
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 123
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 130
-[06-Mar-2025 09:08:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/recruitment.php on line 130
+[10-Jun-2025 18:43:19 UTC] Error de evento de reprogramación de cron para el gancho: wp_update_user_counts. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"twicedaily","args":[],"interval":43200}
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 29
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 29
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 46
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 46
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 74
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 74
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 138
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 138
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 155
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 155
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 175
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 175
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 182
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 182
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 197
+[19-Jun-2025 08:42:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 197
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 29
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 29
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 46
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 46
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 74
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 74
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 138
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 138
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 155
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 155
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 175
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 175
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 182
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 182
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 197
+[19-Jun-2025 08:44:03 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 197
+[19-Jun-2025 08:48:26 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php:52
+Stack trace:
+#0 /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-includes/template-loader.php(106): include()
+#1 /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-blog-header.php(19): require_once('/home/customer/...')
+#2 /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 52
+[19-Jun-2025 08:48:33 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php:52
+Stack trace:
+#0 /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-includes/template-loader.php(106): include()
+#1 /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-blog-header.php(19): require_once('/home/customer/...')
+#2 /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 52
+[19-Jun-2025 08:48:36 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php:52
+Stack trace:
+#0 /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-includes/template-loader.php(106): include()
+#1 /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-blog-header.php(19): require_once('/home/customer/...')
+#2 /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/vhiovidaprogramme.eu/public_html/wordpress/wp-content/themes/vida/front-page.php on line 52
+[05-Jul-2025 19:40:59 UTC] Error de evento de reprogramación de cron para el gancho: wp_update_themes. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"twicedaily","args":[],"interval":43200}
+[08-Jul-2025 18:38:47 UTC] Error de evento de reprogramación de cron para el gancho: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
