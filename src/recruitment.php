@@ -111,29 +111,6 @@ get_header();
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="c-info c-cols" data-template="2-1">
-				<div class="col1">
-					<?php if(trim($fields['faqs']['title'] ?? '')): ?>
-					<h2 class="c-info__title heading2 uppercase"><?php echo $fields['faqs']['title']; ?></h2>
-					<?php endif; ?>
-					<?php if(trim($fields['faqs']['description'] ?? '')): ?>
-					<div class="c-info__desc text2"><?php echo $fields['faqs']['description']; ?></div>
-					<?php endif; ?>
-					<?php 
-					if($fields['faqs']['button']): 
-						$faqsButton = $fields['faqs']['button'];
-					?>
-					<a href="<?php echo $faqsButton['url'] ?>" target="<?php echo $faqsButton['target'] ?>" class="button"><?php echo $faqsButton['title'] ?></a>
-					<?php endif; ?>
-				</div>
-				<div class="col2">
-					<?php if($fields['faqs']['image']): ?>
-					<div class="c-info__image">
-						<img src="<?php echo $fields['faqs']['image']; ?>" alt="">
-					</div>
-					<?php endif; ?>
-				</div>
-			</div>
 		</section>
 	</main><!-- #main -->
 
