@@ -111,6 +111,29 @@ get_header();
 					<?php endif; ?>
 				</div>
 			</div>
+			<div class="c-info c-cols" data-template="2-1">
+				<div class="col1">
+					<?php if(trim($fields['variable_section']['title'] ?? '')): ?>
+					<h2 class="c-info__title heading2 heading2--fs-constant uppercase"><?php echo $fields['variable_section']['title']; ?></h2>
+					<?php endif; ?>
+					<?php if(trim($fields['variable_section']['description'] ?? '')): ?>
+					<div class="c-info__desc text2"><?php echo $fields['variable_section']['description']; ?></div>
+					<?php endif; ?>
+					<?php
+					if($fields['variable_section']['button']): 
+						$vsButton = $fields['variable_section']['button'];
+					?>
+					<a href="<?php echo $vsButton['url']; ?>" target="<?php echo $vsButton['target']; ?>" class="button button--fs-constant"><?php echo $vsButton['title']; ?></a>
+					<?php endif; ?>
+				</div>
+				<div class="col2">
+					<?php if($fields['variable_section']['image']): ?>
+					<div class="c-info__image">
+						<img src="<?php echo $fields['variable_section']['image']; ?>" alt="">
+					</div>
+					<?php endif; ?>
+				</div>
+			</div>
 		</section>
 	</main><!-- #main -->
 

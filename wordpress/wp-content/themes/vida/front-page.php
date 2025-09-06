@@ -162,7 +162,7 @@ get_header();
 				</div>
 			</div>
 		</section>
-		<section class="c-section">
+		<!-- <section class="c-section">
 			<div class="c-info c-cols" data-template="2-1">
 				<div class="col1">
 					<?php if(trim($fields['variable_section']['title'] ?? '')): ?>
@@ -186,7 +186,7 @@ get_header();
 					<?php endif; ?>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section class="c-section c-section--big-padding-block full-width layout bg-yellow">
 			<div class="c-info c-cols" data-template="1-2">
 				<div class="col1">
