@@ -162,31 +162,41 @@ get_header();
 				</div>
 			</div>
 		</section>
-		<!-- <section class="c-section">
-			<div class="c-info c-cols" data-template="2-1">
+		<section class="c-section">
+			<div class="c-info c-cols" data-template="1-2">
 				<div class="col1">
-					<?php if(trim($fields['variable_section']['title'] ?? '')): ?>
-					<h2 class="c-info__title heading2 heading2--fs-constant uppercase"><?php echo $fields['variable_section']['title']; ?></h2>
-					<?php endif; ?>
-					<?php if(trim($fields['variable_section']['description'] ?? '')): ?>
-					<div class="c-info__desc text2"><?php echo $fields['variable_section']['description']; ?></div>
-					<?php endif; ?>
-					<?php
-					if($fields['variable_section']['button']): 
-						$vsButton = $fields['variable_section']['button'];
-					?>
-					<a href="<?php echo $vsButton['url']; ?>" target="<?php echo $vsButton['target']; ?>" class="button button--fs-constant"><?php echo $vsButton['title']; ?></a>
+					<?php if(trim($fields['research_groups']['title'] ?? '')): ?>
+					<h2 class="c-info__title heading2"><?php echo $fields['research_groups']['title']; ?></h2>
 					<?php endif; ?>
 				</div>
 				<div class="col2">
-					<?php if($fields['variable_section']['image']): ?>
-					<div class="c-info__image">
-						<img src="<?php echo $fields['variable_section']['image']; ?>" alt="">
+					<?php 
+					if(!empty($fields['research_groups']['data'])):
+						foreach ($fields['research_groups']['data'] as $data):
+					?>
+					<div class="c-data">
+						<?php if(trim($data['term'] ?? '')): ?>
+						<h3 class="c-data__term heading3"><?php echo $data['term']; ?></h3>
+						<?php endif; ?>
+						<?php if(trim($data['description'] ?? '')): ?>
+						<div class="c-data__description">
+							<?php 
+							echo $data['description'];
+							
+							if(trim($data['button_url'] ?? '')): 
+							?>
+							<a href="<?php echo $data['button_url']; ?>" target="_blank" class="button"><?php echo get_field('read_more', 'options'); ?></a>
+							<?php endif; ?>
+						</div>
+						<?php endif; ?>
 					</div>
-					<?php endif; ?>
+					<?php
+						endforeach;
+					endif;
+					?>
 				</div>
 			</div>
-		</section> -->
+		</section>
 		<section class="c-section c-section--big-padding-block full-width layout bg-yellow">
 			<div class="c-info c-cols" data-template="1-2">
 				<div class="col1">
