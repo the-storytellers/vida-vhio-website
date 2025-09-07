@@ -55,7 +55,13 @@ get_header();
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="c-info c-cols" data-template="2-1">
+			<?php 
+			$faqsId = "";
+			if(trim($fields['faqs']['id'] ?? '')):
+				$faqsId = $fields['faqs']['id'];
+			endif;
+			?>
+			<div id="<?php echo $faqsId; ?>" class="c-info c-cols" data-template="2-1">
 				<div class="col1">
 					<?php if(trim($fields['faqs']['title'] ?? '')): ?>
 					<h2 class="c-info__title heading2 uppercase"><?php echo $fields['faqs']['title']; ?></h2>
