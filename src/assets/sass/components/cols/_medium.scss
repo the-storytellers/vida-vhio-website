@@ -33,6 +33,10 @@
         }
     } */
     
+    &[data-template="1-1"]{
+        grid-template-columns: minmax(0,.5fr) minmax(0,.5fr);            /* 570px 570px in 1200 container*/
+    }
+    
     &[data-template="1-2"]{
         /* grid-template-columns: 
             [col-1-start] 1fr [col-1-end] 
