@@ -36,8 +36,28 @@
 		line-height: 1.56em; */
 	}
 
+	* + &__job,
+	* + &__location{
+		margin-block-start: 1.125rem;
+	}
+
 	& + &{
 		border-block-start: none;
+	}
+
+	&--fellow{
+		.c-card__image{
+			padding: 0;
+
+			img{
+				height: 15rem;
+				object-fit: cover;
+			}
+		}
+
+		.c-card__content{
+			justify-content: space-between;
+		}
 	}
 }
 
