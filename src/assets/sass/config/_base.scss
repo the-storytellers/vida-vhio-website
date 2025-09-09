@@ -439,6 +439,22 @@ strong{
 	background-color: var(--colors-corporate);
 }
 
+.arrow{
+	border: solid currentColor;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	/* padding: .5625rem; */
+	padding: .5em;
+
+	&--right{
+		transform: rotate(-45deg);
+	}
+
+	&--left{
+		transform: rotate(135deg);
+	}
+}
+
 /* .mobile{}
 body .desktop{
 	display: none;

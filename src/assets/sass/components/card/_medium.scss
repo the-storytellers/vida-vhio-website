@@ -16,6 +16,15 @@
 	&__desc{
 	}
 
+	&__nav{
+		a{
+			&[rel=prev]{}
+			&[rel=next]{}
+		}
+		
+		&__index{}
+	}
+
 	* + &__job,
 	* + &__location{
 	}
@@ -38,5 +47,13 @@
 		}
 
 		.c-card__content{}
+	}
+
+	&--single-fellow{
+		&:nth-of-type(1){
+			border-width: 2px;
+		}
+		
+		* + .c-card__job{}
 	}
 }

@@ -1,0 +1,46 @@
+.c-block{
+	&__title{}
+
+	&__description{
+		/* li{
+			margin-left: 1em;
+			list-style-type: disc;
+			//list-style-position: inside;
+		} */
+
+		/* * + *:not(li){ */
+		> * + *{
+			/* margin-top: clamp(1rem, 1.875vw, 1.5rem); */
+			/* margin-block-start: clamp(1rem, 1.04vw, 1.25rem); */
+			margin-block-start: 1em;
+		}
+
+		.c-block__title + &{
+			/* margin-block-start: 1rem; */
+			margin-block-start: 1em;
+		}
+	}
+
+	& + &{
+		margin-block-start: 3rem;
+	}
+}
+
+//Mobile first: Small breakpoint imports larger breakpoints
+/*@include small {
+    @import 'small';
+}*/
+
+/* @include medium {
+    @import 'medium';
+} */
+
+/*@include large {
+    @import 'large';
+}
+@include xlarge {
+    @import 'xlarge';
+}
+@include xxlarge {
+    @import 'xxlarge';
+}*/

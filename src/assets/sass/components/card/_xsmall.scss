@@ -36,6 +36,35 @@
 		line-height: 1.56em; */
 	}
 
+	&__nav{
+		position: relative;
+		margin-block-start: 2em;
+		min-height: 1em;
+
+		a{
+			/* font-size: 1.5rem; */
+			line-height: 1em;
+			/* color: c("white"); */
+			
+			&[rel=prev]{
+				float: left;
+			}
+			&[rel=next]{
+				float: right;
+			}
+		}
+		
+		&__index{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 1.125rem;
+			/* font-weight: 300; */
+			line-height: 1em;
+		}
+	}
+
 	* + &__job,
 	* + &__location{
 		margin-block-start: 1.125rem;
@@ -57,6 +86,14 @@
 
 		.c-card__content{
 			justify-content: space-between;
+		}
+	}
+
+	&--single-fellow{
+		border-width: 2px;
+		
+		* + .c-card__job{
+			margin-block-start: 0;
 		}
 	}
 }
